@@ -7,10 +7,12 @@
 #include "Axe.h"
 #include "Bomb.h"
 #include "Costume.h"
+#include "Accessory.h"
 #include "Handgun.h"
 #include "Helmets.h"
 #include "Shield.h"
 #include "Sword.h"
+#include "Inventory.h"
 #include <string>
 #include <vector>
 using namespace std;

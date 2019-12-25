@@ -154,6 +154,7 @@
     <ClCompile Include="Accessory.cpp" />
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="AttackItem.cpp" />
+    <ClCompile Include="AuctionHouse.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="MainDriver.cpp" />
     <ClCompile Include="Axe.cpp" />
