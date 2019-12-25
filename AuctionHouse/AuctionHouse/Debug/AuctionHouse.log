@@ -1,0 +1,29 @@
+﻿  Accessory.cpp
+  Armor.cpp
+  AttackItem.cpp
+  MainDriver.cpp
+  Axe.cpp
+  Bomb.cpp
+  Costume.cpp
+  DecorateItem.cpp
+  DefenseItem.cpp
+  Handgun.cpp
+  Helmets.cpp
+  Item.cpp
+  Player.cpp
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Helmets.h(4,14): error C2011:  'Helmet': 'class' type redefinition
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Helmets.h(4): message :  see declaration of 'Helmet'
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(36,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(37,21): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(56,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(62,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(68,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(74,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(80,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(86,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(92,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(98,20): warning C4018:  '<': signed/unsigned mismatch
+  Shield.cpp
+  Sword.cpp
+  Generating Code...
+C:\Users\G\Documents\GitHub\AuctionHouse\AuctionHouse\Player.cpp(104,20): warning C4018:  '<': signed/unsigned mismatch
