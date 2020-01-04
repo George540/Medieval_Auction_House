@@ -21,138 +21,57 @@ Inventory::Inventory() : swords(0), axes(0), handguns(0), bombs(0), armors(0), h
 
 Inventory::~Inventory() {}
 
-Sword Inventory::removeSword(Sword sword) {
-	vector<Sword>::iterator it = find(swords.begin(), swords.end(), sword);
-
-	if (it != swords.end())
-		cout << sword.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << sword.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(swords.begin(), it);
-	Sword temp = swords.at(index);
-	swords.erase(swords.begin() + index);
+Sword Inventory::removeSword(int choice) {
+	Sword temp = swords.at(choice);
+	swords.erase(swords.begin() + choice);
 	return temp;
 }
 
-Axe Inventory::removeAxe(Axe axe) {
-	vector<Axe>::iterator it = find(axes.begin(), axes.end(), axe);
-
-	if (it != axes.end())
-		cout << axe.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << axe.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(axes.begin(), it);
-	Axe temp = axes.at(index);
-	axes.erase(axes.begin() + index);
+Axe Inventory::removeAxe(int choice) {
+	Axe temp = axes.at(choice);
+	axes.erase(axes.begin() + choice);
 	return temp;
 }
 
-Handgun Inventory::removeHandgun(Handgun handgun) {
-	vector<Handgun>::iterator it = find(handguns.begin(), handguns.end(), handgun);
-
-	if (it != handguns.end())
-		cout << handgun.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << handgun.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(handguns.begin(), it);
-	Handgun temp = handguns.at(index);
-	handguns.erase(handguns.begin() + index);
+Handgun Inventory::removeHandgun(int choice) {
+	Handgun temp = handguns.at(choice);
+	handguns.erase(handguns.begin() + choice);
 	return temp;
 }
 
-Bomb Inventory::removeBomb(Bomb bomb) {
-	vector<Bomb>::iterator it = find(bombs.begin(), bombs.end(), bomb);
-
-	if (it != bombs.end())
-		cout << bomb.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << bomb.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(bombs.begin(), it);
-	Bomb temp = bombs.at(index);
-	bombs.erase(bombs.begin() + index);
+Bomb Inventory::removeBomb(int choice) {
+	Bomb temp = bombs.at(choice);
+	bombs.erase(bombs.begin() + choice);
 	return temp;
 }
 
-Armor Inventory::removeArmor(Armor armor) {
-	vector<Armor>::iterator it = find(armors.begin(), armors.end(), armor);
-
-	if (it != armors.end())
-		cout << armor.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << armor.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(armors.begin(), it);
-	Armor temp = armors.at(index);
-	armors.erase(armors.begin() + index);
+Armor Inventory::removeArmor(int choice) {
+	Armor temp = armors.at(choice);
+	armors.erase(armors.begin() + choice);
 	return temp;
 }
 
-Helmet Inventory::removeHelmet(Helmet helmet) {
-	vector<Helmet>::iterator it = find(helmets.begin(), helmets.end(), helmet);
-
-	if (it != helmets.end())
-		cout << helmet.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << helmet.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(helmets.begin(), it);
-	Helmet temp = helmets.at(index);
-	helmets.erase(helmets.begin() + index);
+Helmet Inventory::removeHelmet(int choice) {
+	Helmet temp = helmets.at(choice);
+	helmets.erase(helmets.begin() + choice);
 	return temp;
 }
 
-Shield Inventory::removeShield(Shield shield) {
-	vector<Shield>::iterator it = find(shields.begin(), shields.end(), shield);
-
-	if (it != shields.end())
-		cout << shield.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << shield.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(shields.begin(), it);
-	Shield temp = shields.at(index);
-	shields.erase(shields.begin() + index);
+Shield Inventory::removeShield(int choice) {
+	Shield temp = shields.at(choice);
+	shields.erase(shields.begin() + choice);
 	return temp;
 }
 
-Costume Inventory::removeCostume(Costume costume) {
-	vector<Costume>::iterator it = find(costumes.begin(), costumes.end(), costume);
-
-	if (it != costumes.end())
-		cout << costume.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << costume.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(costumes.begin(), it);
-	Costume temp = costumes.at(index);
-	costumes.erase(costumes.begin() + index);
+Costume Inventory::removeCostume(int choice) {
+	Costume temp = costumes.at(choice);
+	costumes.erase(costumes.begin() + choice);
 	return temp;
 }
 
-Accessory Inventory::removeAccessory(Accessory accessory) {
-	vector<Accessory>::iterator it = find(accessories.begin(), accessories.end(), accessory);
-
-	if (it != accessories.end())
-		cout << accessory.getName() << " found. Remove from storage" << endl;
-	else {
-		cout << accessory.getName() << " NOT found. Cancelling action" << endl;
-		return;
-	}
-	int index = distance(accessories.begin(), it);
-	Accessory temp = accessories.at(index);
-	accessories.erase(accessories.begin() + index);
+Accessory Inventory::removeAccessory(int choice) {
+	Accessory temp = accessories.at(choice);
+	accessories.erase(accessories.begin() + choice);
 	return temp;
 }
 

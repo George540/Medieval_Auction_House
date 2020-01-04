@@ -50,13 +50,13 @@ public:
 	inline void addCostume(Costume costume) { costumes.push_back(costume); }
 	inline void addAccessory(Accessory accessory) { accessories.push_back(accessory); }
 
-	Sword removeSword(Sword sword);
-	Axe removeAxe(Axe axe);
-	Handgun removeHandgun(Handgun handgun);
-	Bomb removeBomb(Bomb bomb);
-	Armor removeArmor(Armor armor);
-	Helmet removeHelmet(Helmet helmet);
-	Shield removeShield(Shield shield);
-	Costume removeCostume(Costume costume);
-	Accessory removeAccessory(Accessory accessory);
+	Sword removeSword(int choice);
+	Axe removeAxe(int choice);
+	Handgun removeHandgun(int choice);
+	Bomb removeBomb(int choice);
+	Armor removeArmor(int choice);
+	Helmet removeHelmet(int choice);
+	Shield removeShield(int choice);
+	Costume removeCostume(int choice);
+	Accessory removeAccessory(int choice);
 };

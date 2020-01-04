@@ -1,0 +1,4 @@
+﻿  Test.cpp
+C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\Test\Test.cpp(14,20): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\Test\Test.cpp(20,20): warning C4018:  '<': signed/unsigned mismatch
+  Test.vcxproj -> C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\Debug\Test.exe

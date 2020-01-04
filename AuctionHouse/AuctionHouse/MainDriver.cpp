@@ -1,11 +1,51 @@
 // AuctionHouse.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
+#include "Item.h"
+#include "DecorateItem.h"
+#include "AttackItem.h"
+#include "DefenseItem.h"
+#include "Armor.h"
+#include "Axe.h"
+#include "Bomb.h"
+#include "Costume.h"
+#include "Accessory.h"
+#include "Handgun.h"
+#include "Helmets.h"
+#include "Shield.h"
+#include "Sword.h"
+#include "Inventory.h"
+#include <string>
+#include <vector>
 #include <iostream>
+using namespace std;
+
+
+int removeInt(vector<int> list, int choice);
 
 int main()
 {
     std::cout << "Hello World!\n";
+
+	vector<int> list = { 10, 4, 7, 3, 5 };
+	for (int i = 0; i < list.size(); i++)
+		cout << list.at(i) << " ";
+}
+
+int removeInt(vector<int>* list, int choice) {
+	auto it = find(list->begin(), list->end(), choice);
+
+	if (it != list->end())
+		cout << choice << " found. Remove from storage" << endl;
+	else {
+		cout << choice << " NOT found. Cancelling action" << endl;
+		return choice;
+	}
+
+	int index = distance(list->begin(), it);
+	int temp = list->at(index);
+	list->erase(list->begin() + index);
+	return temp;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

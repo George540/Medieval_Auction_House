@@ -92,3 +92,46 @@ void Player::search(const Inventory& storage, string search) {
 	}
 
 }
+
+Item Player::buy(Inventory* storage, int choice1, int choice2) {
+	Item selected;
+
+	if (choice1 == 1) {
+		selected = storage->getSwords().at(choice2);
+		storage->getSwords().erase(storage->getSwords().begin() + choice2);
+	}
+	else if (choice1 == 2) {
+		selected = storage->getAxes().at(choice2);
+		storage->getAxes().erase(storage->getAxes().begin() + choice2);
+	}
+	else if (choice1 == 3) {
+		selected = storage->getHandguns().at(choice2);
+		storage->getHandguns().erase(storage->getHandguns().begin() + choice2);
+	}
+	else if (choice1 == 4) {
+		selected = storage->getBombs().at(choice2);
+		storage->getBombs().erase(storage->getBombs().begin() + choice2);
+	}
+	else if (choice1 == 5) {
+		selected = storage->getArmors().at(choice2);
+		storage->getArmors().erase(storage->getArmors().begin() + choice2);
+	}
+	else if (choice1 == 6) {
+		selected = storage->getHelmets().at(choice2);
+		storage->getHelmets().erase(storage->getHelmets().begin() + choice2);
+	}
+	else if (choice1 == 6) {
+		selected = storage->getShields().at(choice2);
+		storage->getShields().erase(storage->getShields().begin() + choice2);
+	}
+	else if (choice1 == 7) {
+		selected = storage->getCostumes().at(choice2);
+		storage->getCostumes().erase(storage->getCostumes().begin() + choice2);
+	}
+	else if (choice1 == 8) {
+		selected = storage->getAccessories().at(choice2);
+		storage->getAccessories().erase(storage->getAccessories().begin() + choice2);
+	}
+
+	return selected;
+}
