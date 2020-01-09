@@ -93,6 +93,7 @@ void Player::search(const Inventory& storage, string search) {
 
 }
 
+// Searching is way less than O(n^2)
 Item Player::buy(Inventory* storage, int choice1, int choice2) {
 	Item selected;
 
