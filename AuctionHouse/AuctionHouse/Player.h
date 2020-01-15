@@ -28,6 +28,6 @@ public:
 	Player(int mon, string id);
 	void bid(Item* item, int bid);
 	Item buy(Inventory* storage, int choice1, int choice2);
-	void search(const Inventory& storage, string search);
+	vector<Item> search(const Inventory& storage, string search);
 	void auction(Inventory* storage, Item item);
 };

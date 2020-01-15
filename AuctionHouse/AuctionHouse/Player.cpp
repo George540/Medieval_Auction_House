@@ -33,14 +33,19 @@ void Player::bid(Item* item, int bid) {
 		cout << "Bidding price is too low. Cannot bid item" << endl;
 }
 
-void Player::search(const Inventory& storage, string search) {
+vector<Item> Player::search(const Inventory& storage, string search) {
 	cout << "Searching for items with the following characters: " << search << endl;
 	cout << endl;
 
+	vector<Item> searches;
+
 	cout << "Swords with the following characters: " << endl;
 	for (int i = 0; i < storage.getSwords().size(); i++) {
-		if (storage.getSwords().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getSwords().at(i).getName() << endl;
+		if (storage.getSwords().at(i).getName().find(search) != string::npos) {
+			Sword found = storage.getSwords().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Axes with the following characters: " << endl;
