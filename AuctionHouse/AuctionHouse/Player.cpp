@@ -44,56 +44,79 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (storage.getSwords().at(i).getName().find(search) != string::npos) {
 			Sword found = storage.getSwords().at(i);
 			searches.push_back(found);
-			found.print();
 		}
 	}
 
 	cout << "Axes with the following characters: " << endl;
 	for (int i = 0; i < storage.getAxes().size(); i++) {
-		if (storage.getAxes().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getAxes().at(i).getName() << endl;
+		if (storage.getAxes().at(i).getName().find(search) != string::npos) {
+			Axe found = storage.getAxes().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Handguns with the following characters: " << endl;
 	for (int i = 0; i < storage.getHandguns().size(); i++) {
-		if (storage.getHandguns().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getHandguns().at(i).getName() << endl;
+		if (storage.getHandguns().at(i).getName().find(search) != string::npos) {
+			Handgun found = storage.getHandguns().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Bombs with the following characters: " << endl;
 	for (int i = 0; i < storage.getBombs().size(); i++) {
-		if (storage.getBombs().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getBombs().at(i).getName() << endl;
+		if (storage.getBombs().at(i).getName().find(search) != string::npos) {
+			Bomb found = storage.getBombs().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Armor with the following characters: " << endl;
 	for (int i = 0; i < storage.getArmors().size(); i++) {
-		if (storage.getArmors().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getArmors().at(i).getName() << endl;
+		if (storage.getArmors().at(i).getName().find(search) != string::npos) {
+			Armor found = storage.getArmors().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Helmets with the following characters: " << endl;
 	for (int i = 0; i < storage.getHelmets().size(); i++) {
-		if (storage.getHelmets().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getHelmets().at(i).getName() << endl;
+		if (storage.getHelmets().at(i).getName().find(search) != string::npos) {
+			Helmet found = storage.getHelmets().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Shields with the following characters: " << endl;
 	for (int i = 0; i < storage.getShields().size(); i++) {
-		if (storage.getShields().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getShields().at(i).getName() << endl;
+		if (storage.getShields().at(i).getName().find(search) != string::npos) {
+			Shield found = storage.getShields().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Costumes with the following characters: " << endl;
 	for (int i = 0; i < storage.getCostumes().size(); i++) {
-		if (storage.getCostumes().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getCostumes().at(i).getName() << endl;
+		if (storage.getCostumes().at(i).getName().find(search) != string::npos) {
+			Costume found = storage.getCostumes().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 	cout << "Accessories with the following characters: " << endl;
 	for (int i = 0; i < storage.getAccessories().size(); i++) {
-		if (storage.getAccessories().at(i).getName().find(search) != string::npos)
-			cout << " - " << storage.getAccessories().at(i).getName() << endl;
+		if (storage.getAccessories().at(i).getName().find(search) != string::npos) {
+			Accessory found = storage.getAccessories().at(i);
+			searches.push_back(found);
+			found.print();
+		}
 	}
 
 }
