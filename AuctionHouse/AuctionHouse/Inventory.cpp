@@ -15,6 +15,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 Inventory::Inventory() : swords(0), axes(0), handguns(0), bombs(0), armors(0), helmets(0), shields(0), costumes(0), accessories(0) {}
@@ -24,54 +25,67 @@ Inventory::~Inventory() {}
 Sword Inventory::removeSword(int choice) {
 	Sword temp = swords.at(choice);
 	swords.erase(swords.begin() + choice);
+	sort(swords.begin(), swords.end());
 	return temp;
 }
 
 Axe Inventory::removeAxe(int choice) {
 	Axe temp = axes.at(choice);
 	axes.erase(axes.begin() + choice);
+	sort(axes.begin(), axes.end());
 	return temp;
 }
 
 Handgun Inventory::removeHandgun(int choice) {
 	Handgun temp = handguns.at(choice);
 	handguns.erase(handguns.begin() + choice);
+	sort(handguns.begin(), handguns.end());
 	return temp;
 }
 
 Bomb Inventory::removeBomb(int choice) {
 	Bomb temp = bombs.at(choice);
 	bombs.erase(bombs.begin() + choice);
+	sort(bombs.begin(), bombs.end());
 	return temp;
 }
 
 Armor Inventory::removeArmor(int choice) {
 	Armor temp = armors.at(choice);
 	armors.erase(armors.begin() + choice);
+	sort(armors.begin(), armors.end());
 	return temp;
 }
 
 Helmet Inventory::removeHelmet(int choice) {
 	Helmet temp = helmets.at(choice);
 	helmets.erase(helmets.begin() + choice);
+	sort(helmets.begin(), helmets.end());
 	return temp;
 }
 
 Shield Inventory::removeShield(int choice) {
 	Shield temp = shields.at(choice);
 	shields.erase(shields.begin() + choice);
+	sort(shields.begin(), shields.end());
 	return temp;
 }
 
 Costume Inventory::removeCostume(int choice) {
 	Costume temp = costumes.at(choice);
 	costumes.erase(costumes.begin() + choice);
+	sort(costumes.begin(), costumes.end());
 	return temp;
 }
 
 Accessory Inventory::removeAccessory(int choice) {
 	Accessory temp = accessories.at(choice);
 	accessories.erase(accessories.begin() + choice);
+	sort(accessories.begin(), accessories.end());
 	return temp;
+}
+
+void Inventory::printInventory() {
+
 }
 

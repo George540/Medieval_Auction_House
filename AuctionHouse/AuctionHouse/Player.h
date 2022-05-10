@@ -29,5 +29,6 @@ public:
 	void bid(Item* item, int bid);
 	Item buy(Inventory* storage, int choice1, int choice2);
 	vector<Item> search(const Inventory& storage, string search);
+	void printSearch(const vector<Item> searches);
 	void auction(Inventory* storage, Item item);
 };

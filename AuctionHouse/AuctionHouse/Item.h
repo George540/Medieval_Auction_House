@@ -10,7 +10,6 @@ public:
 	Item();
 	~Item();
 	Item(std::string id, int buy, int bid, std::string tp);
-	inline virtual void print();
 	inline std::string getName() const { return label; };
 	inline int getBuy() const { return buyprice; };
 	inline int getBid() const { return bidprice; };
@@ -18,4 +17,5 @@ public:
 	void setBuy(int buy);
 	void setBid(int bid);
 	void setType(std::string tp);
+	virtual void print() const;
 };

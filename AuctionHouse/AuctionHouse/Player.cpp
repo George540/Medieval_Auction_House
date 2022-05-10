@@ -16,6 +16,7 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <typeinfo>
 using namespace std;
 
 Player::Player() : money(500), name("NONAME"), inventory() {};
@@ -33,6 +34,7 @@ void Player::bid(Item* item, int bid) {
 		cout << "Bidding price is too low. Cannot bid item" << endl;
 }
 
+// Searching is O(tn), where t = number of inventory item types
 vector<Item> Player::search(const Inventory& storage, string search) {
 	cout << "Searching for items with the following characters: " << search << endl;
 	cout << endl;
@@ -40,85 +42,85 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 	vector<Item> searches;
 
 	cout << "Swords with the following characters: " << endl;
-	for (int i = 0; i < storage.getSwords().size(); i++) {
-		if (storage.getSwords().at(i).getName().find(search) != string::npos) {
-			Sword found = storage.getSwords().at(i);
-			searches.push_back(found);
+	auto swords = storage.getSwords();
+	for (const auto& sword : swords) {
+		if (search.find(sword.getName()) != std::string::npos) {
+			searches.push_back(sword);
 		}
 	}
 
 	cout << "Axes with the following characters: " << endl;
-	for (int i = 0; i < storage.getAxes().size(); i++) {
-		if (storage.getAxes().at(i).getName().find(search) != string::npos) {
-			Axe found = storage.getAxes().at(i);
-			searches.push_back(found);
-			found.print();
+	auto axes = storage.getAxes();
+	for (const auto& axe : axes) {
+		if (search.find(axe.getName()) != std::string::npos) {
+			searches.push_back(axe);
 		}
 	}
 
 	cout << "Handguns with the following characters: " << endl;
-	for (int i = 0; i < storage.getHandguns().size(); i++) {
-		if (storage.getHandguns().at(i).getName().find(search) != string::npos) {
-			Handgun found = storage.getHandguns().at(i);
-			searches.push_back(found);
-			found.print();
+	auto handguns = storage.getHandguns();
+	for (const auto& handgun : handguns) {
+		if (search.find(handgun.getName()) != std::string::npos) {
+			searches.push_back(handgun);
 		}
 	}
 
 	cout << "Bombs with the following characters: " << endl;
-	for (int i = 0; i < storage.getBombs().size(); i++) {
-		if (storage.getBombs().at(i).getName().find(search) != string::npos) {
-			Bomb found = storage.getBombs().at(i);
-			searches.push_back(found);
-			found.print();
+	auto bombs = storage.getBombs();
+	for (const auto& bomb : bombs) {
+		if (search.find(bomb.getName()) != std::string::npos) {
+			searches.push_back(bomb);
 		}
 	}
 
 	cout << "Armor with the following characters: " << endl;
-	for (int i = 0; i < storage.getArmors().size(); i++) {
-		if (storage.getArmors().at(i).getName().find(search) != string::npos) {
-			Armor found = storage.getArmors().at(i);
-			searches.push_back(found);
-			found.print();
+	auto armors = storage.getArmors();
+	for (const auto& armor : armors) {
+		if (search.find(armor.getName()) != std::string::npos) {
+			searches.push_back(armor);
 		}
 	}
 
 	cout << "Helmets with the following characters: " << endl;
-	for (int i = 0; i < storage.getHelmets().size(); i++) {
-		if (storage.getHelmets().at(i).getName().find(search) != string::npos) {
-			Helmet found = storage.getHelmets().at(i);
-			searches.push_back(found);
-			found.print();
+	auto helmets = storage.getHelmets();
+	for (const auto& helmet : helmets) {
+		if (search.find(helmet.getName()) != std::string::npos) {
+			searches.push_back(helmet);
 		}
 	}
 
 	cout << "Shields with the following characters: " << endl;
-	for (int i = 0; i < storage.getShields().size(); i++) {
-		if (storage.getShields().at(i).getName().find(search) != string::npos) {
-			Shield found = storage.getShields().at(i);
-			searches.push_back(found);
-			found.print();
+	auto shields = storage.getShields();
+	for (const auto& shield : shields) {
+		if (search.find(shield.getName()) != std::string::npos) {
+			searches.push_back(shield);
 		}
 	}
 
 	cout << "Costumes with the following characters: " << endl;
-	for (int i = 0; i < storage.getCostumes().size(); i++) {
-		if (storage.getCostumes().at(i).getName().find(search) != string::npos) {
-			Costume found = storage.getCostumes().at(i);
-			searches.push_back(found);
-			found.print();
+	auto costumes = storage.getCostumes();
+	for (const auto& costume : costumes) {
+		if (search.find(costume.getName()) != std::string::npos) {
+			searches.push_back(costume);
 		}
 	}
 
 	cout << "Accessories with the following characters: " << endl;
-	for (int i = 0; i < storage.getAccessories().size(); i++) {
-		if (storage.getAccessories().at(i).getName().find(search) != string::npos) {
-			Accessory found = storage.getAccessories().at(i);
-			searches.push_back(found);
-			found.print();
+	auto accessories = storage.getAccessories();
+	for (const auto& accessory : accessories) {
+		if (search.find(accessory.getName()) != std::string::npos) {
+			searches.push_back(accessory);
 		}
 	}
 
+	return searches;
+}
+
+void Player::printSearch(const vector<Item> searches) {
+	cout << "Searches found: " << endl;
+	for (const auto& search : searches) {
+		search.print();
+	}
 }
 
 // Searching is way less than O(n^2)

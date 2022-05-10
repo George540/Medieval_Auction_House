@@ -59,4 +59,6 @@ public:
 	Shield removeShield(int choice);
 	Costume removeCostume(int choice);
 	Accessory removeAccessory(int choice);
+
+	void printInventory();
 };

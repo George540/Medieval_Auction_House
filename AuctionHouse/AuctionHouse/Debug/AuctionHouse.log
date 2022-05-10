@@ -1,35 +1,4 @@
-﻿  Accessory.cpp
-  Armor.cpp
-  AttackItem.cpp
-  AuctionHouse.cpp
-  Inventory.cpp
-  MainDriver.cpp
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(31,20): warning C4018: '<': signed/unsigned mismatch
-  Axe.cpp
-  Bomb.cpp
-  Costume.cpp
-  DecorateItem.cpp
-  DefenseItem.cpp
-  Handgun.cpp
-  Helmets.cpp
-  Item.cpp
-  Player.cpp
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(41,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(47,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(53,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(59,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(65,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(71,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(77,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(83,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(89,20): warning C4018: '<': signed/unsigned mismatch
-  Shield.cpp
-  Sword.cpp
-  Generating Code...
-Item.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Item::print(void)" (?print@Item@@UAEXXZ)
-Player.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Item::print(void)" (?print@Item@@UAEXXZ)
-AttackItem.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Item::print(void)" (?print@Item@@UAEXXZ)
-Inventory.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Item::print(void)" (?print@Item@@UAEXXZ)
-DecorateItem.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Item::print(void)" (?print@Item@@UAEXXZ)
-DefenseItem.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Item::print(void)" (?print@Item@@UAEXXZ)
-C:\Users\G\Documents\GitHub\Medieval_Auction_House\AuctionHouse\Debug\AuctionHouse.exe : fatal error LNK1120: 1 unresolved externals
+﻿  MainDriver.cpp
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(34,20): warning C4018: '<': signed/unsigned mismatch
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
+  AuctionHouse.vcxproj -> D:\GitRepositories\Medieval_Auction_House\AuctionHouse\Debug\AuctionHouse.exe

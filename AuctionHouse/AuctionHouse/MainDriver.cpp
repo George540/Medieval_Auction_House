@@ -18,10 +18,13 @@
 #include <string>
 #include <vector>
 #include <iostream>
+#include <algorithm>
+#include <cmath>
 using namespace std;
 
 
-int removeInt(vector<int> list, int choice);
+int removeInt(vector<int>& list, int choice);
+int findInt(vector<int> list, int l, int r, int choice);
 
 int main()
 {
@@ -30,22 +33,55 @@ int main()
 	vector<int> list = { 10, 4, 7, 3, 5 };
 	for (int i = 0; i < list.size(); i++)
 		cout << list.at(i) << " ";
+	cout << endl;
+
+	removeInt(list, 7);
+
+	for (int i = 0; i < list.size(); i++)
+		cout << list.at(i) << " ";
+
+	cout << endl;
+
+	sort(list.begin(), list.end());
+
+	auto choice = 4;
+	auto result = findInt(list, 0, list.size() - 1, choice);
+	if (result == -1) {
+		cout << choice << " NOT found. Cancelling action" << endl;
+	}
+	else {
+		cout << choice << " found. Index is: " << result << endl;
+	}
 }
 
-int removeInt(vector<int>* list, int choice) {
-	auto it = find(list->begin(), list->end(), choice);
+int removeInt(vector<int>& list, int choice) {
+	auto it = find(list.begin(), list.end(), choice);
 
-	if (it != list->end())
+	if (it != list.end())
 		cout << choice << " found. Remove from storage" << endl;
 	else {
 		cout << choice << " NOT found. Cancelling action" << endl;
 		return choice;
 	}
 
-	int index = distance(list->begin(), it);
-	int temp = list->at(index);
-	list->erase(list->begin() + index);
+	int index = distance(list.begin(), it);
+	int temp = list.at(index);
+	list.erase(list.begin() + index);
 	return temp;
+}
+
+int findInt(vector<int> list, int l, int r, int choice) {
+	if (r >= l) {
+		int mid = l + (r - l) / 2;
+
+		if (list[mid] == choice) return mid;
+
+		if (list[mid] > choice) return findInt(list, l, mid - 1, choice);
+
+		return findInt(list, mid + 1, r, choice);
+	}
+
+	return -1;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
