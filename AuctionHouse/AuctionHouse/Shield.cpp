@@ -9,7 +9,7 @@ Shield::~Shield() {};
 
 Shield::Shield(string name, int buy, int bid, string tp, int def) : DefenseItem(name, buy, bid, tp, def) {};
 
-void Shield::print() {
+void Shield::print() const {
 	cout << "Shield: " << getName() << ", Defense: " << getDefense() << ", Type: " << getType() << endl;
 	cout << "Buying Price: " << getBuy() << ", Bidding Price: " << getBid() << endl;
 	cout << endl;

@@ -7,5 +7,5 @@ public:
 	Bomb();
 	~Bomb();
 	Bomb(std::string name, int buy, int bid, std::string tp, int dmg, int spd);
-	void print();
+	void print() const;
 };

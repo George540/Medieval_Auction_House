@@ -7,5 +7,5 @@ public:
 	Armor();
 	~Armor();
 	Armor(std::string name, int buy, int bid, std::string tp, int def);
-	void print();
+	void print() const;
 };

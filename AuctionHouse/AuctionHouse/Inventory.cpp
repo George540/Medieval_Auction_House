@@ -25,67 +25,120 @@ Inventory::~Inventory() {}
 Sword Inventory::removeSword(int choice) {
 	Sword temp = swords.at(choice);
 	swords.erase(swords.begin() + choice);
-	sort(swords.begin(), swords.end());
 	return temp;
 }
 
 Axe Inventory::removeAxe(int choice) {
 	Axe temp = axes.at(choice);
 	axes.erase(axes.begin() + choice);
-	sort(axes.begin(), axes.end());
 	return temp;
 }
 
 Handgun Inventory::removeHandgun(int choice) {
 	Handgun temp = handguns.at(choice);
 	handguns.erase(handguns.begin() + choice);
-	sort(handguns.begin(), handguns.end());
 	return temp;
 }
 
 Bomb Inventory::removeBomb(int choice) {
 	Bomb temp = bombs.at(choice);
 	bombs.erase(bombs.begin() + choice);
-	sort(bombs.begin(), bombs.end());
 	return temp;
 }
 
 Armor Inventory::removeArmor(int choice) {
 	Armor temp = armors.at(choice);
 	armors.erase(armors.begin() + choice);
-	sort(armors.begin(), armors.end());
 	return temp;
 }
 
 Helmet Inventory::removeHelmet(int choice) {
 	Helmet temp = helmets.at(choice);
 	helmets.erase(helmets.begin() + choice);
-	sort(helmets.begin(), helmets.end());
 	return temp;
 }
 
 Shield Inventory::removeShield(int choice) {
 	Shield temp = shields.at(choice);
 	shields.erase(shields.begin() + choice);
-	sort(shields.begin(), shields.end());
 	return temp;
 }
 
 Costume Inventory::removeCostume(int choice) {
 	Costume temp = costumes.at(choice);
 	costumes.erase(costumes.begin() + choice);
-	sort(costumes.begin(), costumes.end());
 	return temp;
 }
 
 Accessory Inventory::removeAccessory(int choice) {
 	Accessory temp = accessories.at(choice);
 	accessories.erase(accessories.begin() + choice);
-	sort(accessories.begin(), accessories.end());
 	return temp;
 }
 
 void Inventory::printInventory() {
+	cout << "AUCTION HOUSE INVENTORY" << endl;
+
+	cout << swords.size() << " swords are up for auctions" << endl;
+	for (const auto& sword : swords) {
+		sword.print();
+	}
+
+	cout << endl;
+
+	cout << axes.size() << " axes are up for auctions" << endl;
+	for (const auto& axe : axes) {
+		axe.print();
+	}
+
+	cout << endl;
+
+	cout << handguns.size() << " handguns are up for auctions" << endl;
+	for (const auto& handgun : handguns) {
+		handgun.print();
+	}
+
+	cout << endl;
+
+	cout << bombs.size() << " bombs are up for auctions" << endl;
+	for (const auto& bomb : bombs) {
+		bomb.print();
+	}
+
+	cout << endl;
+
+	cout << armors.size() << " armors are up for auctions" << endl;
+	for (const auto& armor : armors) {
+		armor.print();
+	}
+
+	cout << endl;
+
+	cout << helmets.size() << " helmets are up for auctions" << endl;
+	for (const auto& helmet : helmets) {
+		helmet.print();
+	}
+
+	cout << endl;
+
+	cout << shields.size() << " shields are up for auctions" << endl;
+	for (const auto& shield : shields) {
+		shield.print();
+	}
+
+	cout << endl;
+
+	cout << costumes.size() << " costumes are up for auctions" << endl;
+	for (const auto& costume : costumes) {
+		costume.print();
+	}
+
+	cout << endl;
+
+	cout << accessories.size() << " accessories are up for auctions" << endl;
+	for (const auto& accessory : accessories) {
+		accessory.print();
+	}
 
 }
 

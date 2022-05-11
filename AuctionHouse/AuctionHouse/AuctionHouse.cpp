@@ -28,3 +28,5 @@ AuctionHouse::AuctionHouse() : storage() {
 
 
 }
+
+AuctionHouse::~AuctionHouse() {}
