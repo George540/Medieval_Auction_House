@@ -13,6 +13,7 @@
 #include "Shield.h"
 #include "Sword.h"
 #include "AuctionHouse.h"
+#include "Utilities.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -124,42 +125,43 @@ void Player::printSearch(const vector<Item> searches) {
 }
 
 // Searching is way less than O(n^2)
-Item Player::buy(Inventory* storage, int choice1, int choice2) {
+Item Player::buy(Inventory* storage, string itemName) {
 	Item selected;
 
-	if (choice1 == 1) {
-		selected = storage->getSwords().at(choice2);
-		storage->getSwords().erase(storage->getSwords().begin() + choice2);
+	if (ContainsInsensitiveString(itemName, "Sword")) {
+		/*auto& swords = storage->getSwords();
+		auto it = find(swords.begin(), swords.end(), [&itemName](const auto& s) { return s.getName() == itemName; });
+		selected = *it;
+		storage->removeSword(distance(swords.begin(), it));*/
 	}
-	else if (choice1 == 2) {
-		selected = storage->getAxes().at(choice2);
-		storage->getAxes().erase(storage->getAxes().begin() + choice2);
+	else if (ContainsInsensitiveString(itemName, "Axe")) {
+		selected = storage->removeSword(itemName);
 	}
-	else if (choice1 == 3) {
+	else if (ContainsInsensitiveString(itemName, "Handgun")) {
 		selected = storage->getHandguns().at(choice2);
 		storage->getHandguns().erase(storage->getHandguns().begin() + choice2);
 	}
-	else if (choice1 == 4) {
+	else if (ContainsInsensitiveString(itemName, "Bomb")) {
 		selected = storage->getBombs().at(choice2);
 		storage->getBombs().erase(storage->getBombs().begin() + choice2);
 	}
-	else if (choice1 == 5) {
+	else if (ContainsInsensitiveString(itemName, "Armor")) {
 		selected = storage->getArmors().at(choice2);
 		storage->getArmors().erase(storage->getArmors().begin() + choice2);
 	}
-	else if (choice1 == 6) {
+	else if (ContainsInsensitiveString(itemName, "Helmet")) {
 		selected = storage->getHelmets().at(choice2);
 		storage->getHelmets().erase(storage->getHelmets().begin() + choice2);
 	}
-	else if (choice1 == 6) {
+	else if (ContainsInsensitiveString(itemName, "Shield")) {
 		selected = storage->getShields().at(choice2);
 		storage->getShields().erase(storage->getShields().begin() + choice2);
 	}
-	else if (choice1 == 7) {
+	else if (ContainsInsensitiveString(itemName, "Costume")) {
 		selected = storage->getCostumes().at(choice2);
 		storage->getCostumes().erase(storage->getCostumes().begin() + choice2);
 	}
-	else if (choice1 == 8) {
+	else if (ContainsInsensitiveString(itemName, "Accessory")) {
 		selected = storage->getAccessories().at(choice2);
 		storage->getAccessories().erase(storage->getAccessories().begin() + choice2);
 	}

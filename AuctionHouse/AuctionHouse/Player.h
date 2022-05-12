@@ -27,7 +27,7 @@ public:
 	~Player();
 	Player(int mon, string id);
 	void bid(Item* item, int bid);
-	Item buy(Inventory* storage, int choice1, int choice2);
+	Item buy(Inventory* storage, string itemName);
 	vector<Item> search(const Inventory& storage, string search);
 	void printSearch(const vector<Item> searches);
 	void auction(Inventory* storage, Item item);

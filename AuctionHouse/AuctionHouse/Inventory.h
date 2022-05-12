@@ -14,7 +14,6 @@
 #include "Sword.h"
 #include <string>
 #include <vector>
-using namespace std;
 
 class Inventory {
 private:
@@ -30,27 +29,27 @@ private:
 public:
 	Inventory();
 	~Inventory();
-	inline vector<Sword> getSwords() const { return swords; }
-	inline vector<Axe> getAxes() const  { return axes; }
-	inline vector<Handgun> getHandguns() const { return handguns; }
-	inline vector<Bomb> getBombs() const { return bombs; }
-	inline vector<Armor> getArmors() const { return armors; }
-	inline vector<Helmet> getHelmets() const { return helmets; }
-	inline vector<Shield> getShields() const { return shields; }
-	inline vector<Costume> getCostumes() const { return costumes; }
-	inline vector<Accessory> getAccessories() const { return accessories; }
+	vector<Sword> getSwords() const { return swords; }
+	vector<Axe> getAxes() const  { return axes; }
+	vector<Handgun> getHandguns() const { return handguns; }
+	vector<Bomb> getBombs() const { return bombs; }
+	vector<Armor> getArmors() const { return armors; }
+	vector<Helmet> getHelmets() const { return helmets; }
+	vector<Shield> getShields() const { return shields; }
+	vector<Costume> getCostumes() const { return costumes; }
+	vector<Accessory> getAccessories() const { return accessories; }
 
-	inline void addSword(Sword sword) { swords.push_back(sword); }
-	inline void addAxe(Axe axe) { axes.push_back(axe); }
-	inline void addHandgun(Handgun handgun) { handguns.push_back(handgun); }
-	inline void addBomb(Bomb bomb) { bombs.push_back(bomb); }
-	inline void addArmor(Armor armor) { armors.push_back(armor); }
-	inline void addHelmet(Helmet helmet) { helmets.push_back(helmet); }
-	inline void addShield(Shield shield) { shields.push_back(shield); }
-	inline void addCostume(Costume costume) { costumes.push_back(costume); }
-	inline void addAccessory(Accessory accessory) { accessories.push_back(accessory); }
+	void addSword(Sword sword) { swords.push_back(sword); }
+	void addAxe(Axe axe) { axes.push_back(axe); }
+	void addHandgun(Handgun handgun) { handguns.push_back(handgun); }
+	void addBomb(Bomb bomb) { bombs.push_back(bomb); }
+	void addArmor(Armor armor) { armors.push_back(armor); }
+	void addHelmet(Helmet helmet) { helmets.push_back(helmet); }
+	void addShield(Shield shield) { shields.push_back(shield); }
+	void addCostume(Costume costume) { costumes.push_back(costume); }
+	void addAccessory(Accessory accessory) { accessories.push_back(accessory); }
 
-	Sword removeSword(int choice);
+	Sword removeSword(string itemName);
 	Axe removeAxe(int choice);
 	Handgun removeHandgun(int choice);
 	Bomb removeBomb(int choice);

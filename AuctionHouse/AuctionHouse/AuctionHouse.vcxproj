@@ -168,6 +168,7 @@
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Shield.cpp" />
     <ClCompile Include="Sword.cpp" />
+    <ClCompile Include="Utilities.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Accessory.h" />
@@ -186,6 +187,7 @@
     <ClInclude Include="Player.h" />
     <ClInclude Include="Shield.h" />
     <ClInclude Include="Sword.h" />
+    <ClInclude Include="Utilities.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

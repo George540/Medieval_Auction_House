@@ -23,7 +23,7 @@ private:
 public:
 	AuctionHouse();
 	~AuctionHouse();
-	inline Inventory getStorage() const { return storage; }
+	Inventory getStorage() const { return storage; }
 	void sortByPriceIncrease(string choice);
 	void sortByPriceDecrease(string choice);
 	void sortAlphabeticallyIncrease(string choice);

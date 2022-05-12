@@ -22,10 +22,11 @@ Inventory::Inventory() : swords(0), axes(0), handguns(0), bombs(0), armors(0), h
 
 Inventory::~Inventory() {}
 
-Sword Inventory::removeSword(int choice) {
-	Sword temp = swords.at(choice);
-	swords.erase(swords.begin() + choice);
-	return temp;
+Sword Inventory::removeSword(string itemName) {
+	auto it = find(swords.begin(), swords.end(), [&itemName](const auto& s) { return s.getName() == itemName; });
+	auto& selected = *it;
+	swords.erase(swords.begin(), it);
+	return selected;
 }
 
 Axe Inventory::removeAxe(int choice) {
@@ -140,5 +141,6 @@ void Inventory::printInventory() {
 		accessory.print();
 	}
 
+	cout << endl;
 }
 
