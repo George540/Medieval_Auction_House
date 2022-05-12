@@ -125,45 +125,41 @@ void Player::printSearch(const vector<Item> searches) {
 }
 
 // Searching is way less than O(n^2)
+// This is done by first finding what type of item is it
+// Then it iterates through the collection of that specific item only
+// without having to iterate through all other irrelevant items
 Item Player::buy(Inventory* storage, string itemName) {
 	Item selected;
 
 	if (ContainsInsensitiveString(itemName, "Sword")) {
-		/*auto& swords = storage->getSwords();
-		auto it = find(swords.begin(), swords.end(), [&itemName](const auto& s) { return s.getName() == itemName; });
-		selected = *it;
-		storage->removeSword(distance(swords.begin(), it));*/
-	}
-	else if (ContainsInsensitiveString(itemName, "Axe")) {
 		selected = storage->removeSword(itemName);
 	}
+	else if (ContainsInsensitiveString(itemName, "Axe")) {
+		selected = storage->removeAxe(itemName);
+	}
 	else if (ContainsInsensitiveString(itemName, "Handgun")) {
-		selected = storage->getHandguns().at(choice2);
-		storage->getHandguns().erase(storage->getHandguns().begin() + choice2);
+		selected = storage->removeHandgun(itemName);
 	}
 	else if (ContainsInsensitiveString(itemName, "Bomb")) {
-		selected = storage->getBombs().at(choice2);
-		storage->getBombs().erase(storage->getBombs().begin() + choice2);
+		selected = storage->removeBomb(itemName);
 	}
 	else if (ContainsInsensitiveString(itemName, "Armor")) {
-		selected = storage->getArmors().at(choice2);
-		storage->getArmors().erase(storage->getArmors().begin() + choice2);
+		selected = storage->removeArmor(itemName);
 	}
 	else if (ContainsInsensitiveString(itemName, "Helmet")) {
-		selected = storage->getHelmets().at(choice2);
-		storage->getHelmets().erase(storage->getHelmets().begin() + choice2);
+		selected = storage->removeHelmet(itemName);
 	}
 	else if (ContainsInsensitiveString(itemName, "Shield")) {
-		selected = storage->getShields().at(choice2);
-		storage->getShields().erase(storage->getShields().begin() + choice2);
+		selected = storage->removeShield(itemName);
 	}
 	else if (ContainsInsensitiveString(itemName, "Costume")) {
-		selected = storage->getCostumes().at(choice2);
-		storage->getCostumes().erase(storage->getCostumes().begin() + choice2);
+		selected = storage->removeCostume(itemName);
 	}
 	else if (ContainsInsensitiveString(itemName, "Accessory")) {
-		selected = storage->getAccessories().at(choice2);
-		storage->getAccessories().erase(storage->getAccessories().begin() + choice2);
+		selected = storage->removeAccessory(itemName);
+	}
+	else {
+		selected = Item();
 	}
 
 	return selected;

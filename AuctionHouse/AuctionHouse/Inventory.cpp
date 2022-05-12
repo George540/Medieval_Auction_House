@@ -18,7 +18,7 @@
 #include <algorithm>
 using namespace std;
 
-Inventory::Inventory() : swords(0), axes(0), handguns(0), bombs(0), armors(0), helmets(0), shields(0), costumes(0), accessories(0) {}
+Inventory::Inventory() {}
 
 Inventory::~Inventory() {}
 
@@ -29,52 +29,60 @@ Sword Inventory::removeSword(string itemName) {
 	return selected;
 }
 
-Axe Inventory::removeAxe(int choice) {
-	Axe temp = axes.at(choice);
-	axes.erase(axes.begin() + choice);
-	return temp;
+Axe Inventory::removeAxe(string itemName) {
+	auto it = find(axes.begin(), axes.end(), [&itemName](const auto& a) { return a.getName() == itemName; });
+	auto& selected = *it;
+	axes.erase(axes.begin(), it);
+	return selected;
 }
 
-Handgun Inventory::removeHandgun(int choice) {
-	Handgun temp = handguns.at(choice);
-	handguns.erase(handguns.begin() + choice);
-	return temp;
+Handgun Inventory::removeHandgun(string itemName) {
+	auto it = find(handguns.begin(), handguns.end(), [&itemName](const auto& h) { return h.getName() == itemName; });
+	auto& selected = *it;
+	handguns.erase(handguns.begin(), it);
+	return selected;
 }
 
-Bomb Inventory::removeBomb(int choice) {
-	Bomb temp = bombs.at(choice);
-	bombs.erase(bombs.begin() + choice);
-	return temp;
+Bomb Inventory::removeBomb(string itemName) {
+	auto it = find(bombs.begin(), bombs.end(), [&itemName](const auto& b) { return b.getName() == itemName; });
+	auto& selected = *it;
+	bombs.erase(bombs.begin(), it);
+	return selected;
 }
 
-Armor Inventory::removeArmor(int choice) {
-	Armor temp = armors.at(choice);
-	armors.erase(armors.begin() + choice);
-	return temp;
+Armor Inventory::removeArmor(string itemName) {
+	auto it = find(armors.begin(), armors.end(), [&itemName](const auto& a) { return a.getName() == itemName; });
+	auto& selected = *it;
+	armors.erase(armors.begin(), it);
+	return selected;
 }
 
-Helmet Inventory::removeHelmet(int choice) {
-	Helmet temp = helmets.at(choice);
-	helmets.erase(helmets.begin() + choice);
-	return temp;
+Helmet Inventory::removeHelmet(string itemName) {
+	auto it = find(helmets.begin(), helmets.end(), [&itemName](const auto& h) { return h.getName() == itemName; });
+	auto& selected = *it;
+	helmets.erase(helmets.begin(), it);
+	return selected;
 }
 
-Shield Inventory::removeShield(int choice) {
-	Shield temp = shields.at(choice);
-	shields.erase(shields.begin() + choice);
-	return temp;
+Shield Inventory::removeShield(string itemName) {
+	auto it = find(shields.begin(), shields.end(), [&itemName](const auto& s) { return s.getName() == itemName; });
+	auto& selected = *it;
+	shields.erase(shields.begin(), it);
+	return selected;
 }
 
-Costume Inventory::removeCostume(int choice) {
-	Costume temp = costumes.at(choice);
-	costumes.erase(costumes.begin() + choice);
-	return temp;
+Costume Inventory::removeCostume(string itemName) {
+	auto it = find(costumes.begin(), costumes.end(), [&itemName](const auto& c) { return c.getName() == itemName; });
+	auto& selected = *it;
+	costumes.erase(costumes.begin(), it);
+	return selected;
 }
 
-Accessory Inventory::removeAccessory(int choice) {
-	Accessory temp = accessories.at(choice);
-	accessories.erase(accessories.begin() + choice);
-	return temp;
+Accessory Inventory::removeAccessory(string itemName) {
+	auto it = find(accessories.begin(), accessories.end(), [&itemName](const auto& a) { return a.getName() == itemName; });
+	auto& selected = *it;
+	accessories.erase(accessories.begin(), it);
+	return selected;
 }
 
 void Inventory::printInventory() {

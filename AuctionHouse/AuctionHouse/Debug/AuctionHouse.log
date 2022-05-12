@@ -1,4 +1,513 @@
-﻿  MainDriver.cpp
+﻿  Accessory.cpp
+  Armor.cpp
+  AttackItem.cpp
+  AuctionHouse.cpp
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,18): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,20): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,31): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,31): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,32): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,43): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(52,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(53,16): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(54,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(55,18): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(56,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(57,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(58,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(59,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(60,28): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(42,31): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(43,25): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(44,37): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(45,28): error C2065: 'bombs': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(46,31): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(47,34): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(48,34): error C2065: 'shields': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(49,37): error C2065: 'costumes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(50,43): error C2065: 'accessories': undeclared identifier
+  Inventory.cpp
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,18): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,20): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,31): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,31): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,32): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,43): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(52,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(53,16): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(54,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(55,18): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(56,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(57,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(58,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(59,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(60,28): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(42,31): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(43,25): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(44,37): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(45,28): error C2065: 'bombs': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(46,31): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(47,34): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(48,34): error C2065: 'shields': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(49,37): error C2065: 'costumes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(50,43): error C2065: 'accessories': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(25,47): error C2511: 'Sword Inventory::removeSword(std::string)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(26,17): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(26,33): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(26,12): error C2672: 'find': no matching overloaded function found
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(26,109): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5193): message : see declaration of 'std::find'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(27,22): error C3536: 'it': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(27,19): error C2100: illegal indirection
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(28,2): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(28,15): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(32,43): error C2511: 'Axe Inventory::removeAxe(std::string)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(33,17): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(33,31): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(33,12): error C2672: 'find': no matching overloaded function found
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(33,105): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5193): message : see declaration of 'std::find'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(34,22): error C3536: 'it': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(34,19): error C2100: illegal indirection
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(35,2): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(35,13): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(39,51): error C2511: 'Handgun Inventory::removeHandgun(std::string)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(40,17): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(40,35): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(40,12): error C2672: 'find': no matching overloaded function found
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(40,113): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5193): message : see declaration of 'std::find'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(41,22): error C3536: 'it': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(41,19): error C2100: illegal indirection
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(42,2): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(42,17): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(46,45): error C2511: 'Bomb Inventory::removeBomb(std::string)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(47,17): error C2065: 'bombs': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(47,32): error C2065: 'bombs': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(47,12): error C2672: 'find': no matching overloaded function found
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(47,107): error C2780: '_InIt std::find(_InIt,const _InIt,const _Ty &)': expects 3 arguments - 2 provided
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5193): message : see declaration of 'std::find'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(48,22): error C3536: 'it': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(48,19): error C2100: illegal indirection
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(49,2): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(49,17): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(53,42): error C2511: 'Armor Inventory::removeArmor(int)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(54,15): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(55,2): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(55,15): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(59,44): error C2511: 'Helmet Inventory::removeHelmet(int)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(60,16): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(61,2): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(61,16): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(65,44): error C2511: 'Shield Inventory::removeShield(int)': overloaded member function not found in 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(66,16): error C2065: 'shields': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(67,2): error C2065: 'shields': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.cpp(67,9): fatal error C1003: error count exceeds 100; stopping compilation
+  MainDriver.cpp
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,18): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,20): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,31): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,31): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,32): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,43): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(52,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(53,16): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(54,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(55,18): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(56,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(57,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(58,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(59,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(60,28): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(42,31): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(43,25): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(44,37): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(45,28): error C2065: 'bombs': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(46,31): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(47,34): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(48,34): error C2065: 'shields': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(49,37): error C2065: 'costumes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(50,43): error C2065: 'accessories': undeclared identifier
 D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(34,20): warning C4018: '<': signed/unsigned mismatch
 D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
-  AuctionHouse.vcxproj -> D:\GitRepositories\Medieval_Auction_House\AuctionHouse\Debug\AuctionHouse.exe
+  Axe.cpp
+  Bomb.cpp
+  Costume.cpp
+  DecorateItem.cpp
+  DefenseItem.cpp
+  Handgun.cpp
+  Helmets.cpp
+  Item.cpp
+  Player.cpp
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(20,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(21,18): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(22,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(23,20): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(24,22): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(25,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(26,24): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(27,26): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(28,31): error C2238: unexpected token(s) preceding ';'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(32,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(33,31): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(34,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(35,32): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(36,34): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(37,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(38,36): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(39,38): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C2143: syntax error: missing ';' before '<'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(40,43): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(52,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(53,16): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(54,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(55,18): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(56,20): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(57,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(58,22): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(59,24): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(60,28): error C2061: syntax error: identifier 'string'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(42,31): error C2065: 'swords': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(43,25): error C2065: 'axes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(44,37): error C2065: 'handguns': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(45,28): error C2065: 'bombs': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(46,31): error C2065: 'armors': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(47,34): error C2065: 'helmets': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(48,34): error C2065: 'shields': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(49,37): error C2065: 'costumes': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(50,43): error C2065: 'accessories': undeclared identifier
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(46,24): error C2039: 'getSwords': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(47,2): error C2530: 'sword': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(47,2): error C3531: 'sword': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(47,25): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(47,2): error C3536: 'swords': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(47,33): error C2143: syntax error: missing ';' before ')'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(49,28): error C2664: 'void std::vector<Item,std::allocator<Item>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(49,28): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(49,28): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(636,23): message : see declaration of 'std::vector<Item,std::allocator<Item>>::push_back'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(54,22): error C2039: 'getAxes': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(55,2): error C2530: 'axe': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(55,2): error C3531: 'axe': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(55,23): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(55,2): error C3536: 'axes': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(55,29): error C2143: syntax error: missing ';' before ')'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(57,26): error C2664: 'void std::vector<Item,std::allocator<Item>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(57,26): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(57,26): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(636,23): message : see declaration of 'std::vector<Item,std::allocator<Item>>::push_back'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(62,26): error C2039: 'getHandguns': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(63,2): error C2530: 'handgun': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(63,2): error C3531: 'handgun': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(63,27): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(63,2): error C3536: 'handguns': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(63,37): error C2143: syntax error: missing ';' before ')'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(65,30): error C2664: 'void std::vector<Item,std::allocator<Item>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(65,30): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(65,30): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(636,23): message : see declaration of 'std::vector<Item,std::allocator<Item>>::push_back'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(70,23): error C2039: 'getBombs': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(71,2): error C2530: 'bomb': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(71,2): error C3531: 'bomb': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(71,24): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(71,2): error C3536: 'bombs': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(71,31): error C2143: syntax error: missing ';' before ')'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(73,27): error C2664: 'void std::vector<Item,std::allocator<Item>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(73,27): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(73,27): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(636,23): message : see declaration of 'std::vector<Item,std::allocator<Item>>::push_back'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(78,24): error C2039: 'getArmors': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(79,2): error C2530: 'armor': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(79,2): error C3531: 'armor': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(79,25): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(79,2): error C3536: 'armors': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(79,33): error C2143: syntax error: missing ';' before ')'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(81,28): error C2664: 'void std::vector<Item,std::allocator<Item>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(81,28): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(81,28): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(636,23): message : see declaration of 'std::vector<Item,std::allocator<Item>>::push_back'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(86,25): error C2039: 'getHelmets': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(87,2): error C2530: 'helmet': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(87,2): error C3531: 'helmet': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(87,26): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(87,2): error C3536: 'helmets': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(87,35): error C2143: syntax error: missing ';' before ')'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(89,29): error C2664: 'void std::vector<Item,std::allocator<Item>>::push_back(const _Ty &)': cannot convert argument 1 from 'int' to 'const _Ty &'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(89,29): message : Reason: cannot convert from 'int' to 'const _Ty'
+          with
+          [
+              _Ty=Item
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(89,29): message : No constructor could take the source type, or constructor overload resolution was ambiguous
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(636,23): message : see declaration of 'std::vector<Item,std::allocator<Item>>::push_back'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(94,25): error C2039: 'getShields': is not a member of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Inventory.h(18): message : see declaration of 'Inventory'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(95,2): error C2530: 'shield': references must be initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(95,2): error C3531: 'shield': a symbol whose type contains 'auto' must have an initializer
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(95,26): error C2143: syntax error: missing ';' before ':'
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(95,2): error C3536: 'shields': cannot be used before it is initialized
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Player.cpp(95,2): fatal error C1003: error count exceeds 100; stopping compilation
+  Shield.cpp
+  Sword.cpp
+  Utilities.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5154,21): error C2677: binary '==': no global operator found which takes type 'const _Ty' (or there is no acceptable conversion)
+          with
+          [
+              _Ty=std::string
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5189): message : see reference to function template instantiation '_InIt std::_Find_unchecked1<_InIt,_Ty>(_InIt,const _InIt,const _Ty &,std::false_type)' being compiled
+          with
+          [
+              _InIt=char *,
+              _Ty=std::string
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(5198): message : see reference to function template instantiation '_InIt std::_Find_unchecked<char*,_Ty>(const _InIt,const _InIt,const _Ty &)' being compiled
+          with
+          [
+              _InIt=char *,
+              _Ty=std::string
+          ]
+D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\Utilities.cpp(23): message : see reference to function template instantiation '_InIt std::find<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,std::string>(_InIt,const _InIt,const _Ty &)' being compiled
+          with
+          [
+              _InIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _Elem=char,
+              _Ty=std::string
+          ]
+  Generating Code...

@@ -50,14 +50,14 @@ public:
 	void addAccessory(Accessory accessory) { accessories.push_back(accessory); }
 
 	Sword removeSword(string itemName);
-	Axe removeAxe(int choice);
-	Handgun removeHandgun(int choice);
-	Bomb removeBomb(int choice);
-	Armor removeArmor(int choice);
-	Helmet removeHelmet(int choice);
-	Shield removeShield(int choice);
-	Costume removeCostume(int choice);
-	Accessory removeAccessory(int choice);
+	Axe removeAxe(string itemName);
+	Handgun removeHandgun(string itemName);
+	Bomb removeBomb(string itemName);
+	Armor removeArmor(string itemName);
+	Helmet removeHelmet(string itemName);
+	Shield removeShield(string itemName);
+	Costume removeCostume(string itemName);
+	Accessory removeAccessory(string itemName);
 
 	void printInventory();
 };
