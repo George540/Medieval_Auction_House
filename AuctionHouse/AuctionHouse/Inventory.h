@@ -59,5 +59,15 @@ public:
 	Costume removeCostume(string itemName);
 	Accessory removeAccessory(string itemName);
 
+	bool hasSword(string itemName);
+	bool hasAxe(string itemName);
+	bool hasHandgun(string itemName);
+	bool hasBomb(string itemName);
+	bool hasArmor(string itemName);
+	bool hasHelmet(string itemName);
+	bool hasShield(string itemName);
+	bool hasCostume(string itemName);
+	bool hasAccessory(string itemName);
+
 	void printInventory();
 };
