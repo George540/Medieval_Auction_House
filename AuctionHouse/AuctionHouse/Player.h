@@ -30,5 +30,5 @@ public:
 	Item buy(Inventory* storage, string itemName);
 	vector<Item> search(const Inventory& storage, string search);
 	void printSearch(const vector<Item> searches);
-	void auction(Inventory* storage, Item item);
+	void placeAuction(Inventory* auctionStorage, Item* item, int startBid, int buyOut);
 };

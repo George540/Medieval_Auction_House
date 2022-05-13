@@ -162,5 +162,63 @@ Item Player::buy(Inventory* storage, string itemName) {
 		selected = Item();
 	}
 
+	selected.setBid(0);
+	selected.setBuy(0);
+
 	return selected;
+}
+
+void Player::placeAuction(Inventory* auctionStorage, Item* item, int startBid, int buyOut) {
+	auto itemName = item->getName();
+
+	cout << "Placing Item: " << itemName << endl;
+
+	if (ContainsInsensitiveString(itemName, "Sword") && inventory.hasSword(itemName) && static_cast<Sword*>(item) != nullptr) {
+		inventory.removeSword(itemName);
+		auctionStorage->addSword(*static_cast<Sword*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Axe") && inventory.hasAxe(itemName) && static_cast<Axe*>(item) != nullptr) {
+		inventory.removeAxe(itemName);
+		auctionStorage->addAxe(*static_cast<Axe*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Handgun") && inventory.hasHandgun(itemName) && static_cast<Handgun*>(item) != nullptr) {
+		inventory.removeHandgun(itemName);
+		auctionStorage->addHandgun(*static_cast<Handgun*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Bomb") && inventory.hasBomb(itemName) && static_cast<Bomb*>(item) != nullptr) {
+		inventory.removeBomb(itemName);
+		auctionStorage->addBomb(*static_cast<Bomb*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Armor") && inventory.hasArmor(itemName) && static_cast<Armor*>(item) != nullptr) {
+		inventory.removeArmor(itemName);
+		auctionStorage->addArmor(*static_cast<Armor*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Helmet") && inventory.hasHelmet(itemName) && static_cast<Helmet*>(item) != nullptr) {
+		inventory.removeHelmet(itemName);
+		auctionStorage->addHelmet(*static_cast<Helmet*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Shield") && inventory.hasShield(itemName) && static_cast<Shield*>(item) != nullptr) {
+		inventory.removeShield(itemName);
+		auctionStorage->addShield(*static_cast<Shield*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Costume") && inventory.hasCostume(itemName) && static_cast<Costume*>(item) != nullptr) {
+		inventory.removeCostume(itemName);
+		auctionStorage->addCostume(*static_cast<Costume*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Accessory") && inventory.hasAccessory(itemName) && static_cast<Accessory*>(item) != nullptr) {
+		inventory.removeAccessory(itemName);
+		auctionStorage->addAccessory(*static_cast<Accessory*>(item));
+	}
+	else {
+		cout << "Item is not recognized. Auction cancelled." << endl;
+		return;
+	}
+
+	item->setBid(startBid);
+	item->setBuy(buyOut);
+
+	cout << "Bid Price :" << item->getBid() << endl;
+	cout << "Buyout Price :" << item->getBuy() << endl;
+
+	cout << itemName << " placed for auction" << endl;
 }
