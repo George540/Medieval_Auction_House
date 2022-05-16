@@ -1,22 +1,2 @@
-﻿  Accessory.cpp
-  Armor.cpp
-  AttackItem.cpp
-  AuctionHouse.cpp
-  Inventory.cpp
-  MainDriver.cpp
-D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(34,20): warning C4018: '<': signed/unsigned mismatch
-D:\GitRepositories\Medieval_Auction_House\AuctionHouse\AuctionHouse\MainDriver.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
-  Axe.cpp
-  Bomb.cpp
-  Costume.cpp
-  DecorateItem.cpp
-  DefenseItem.cpp
-  Handgun.cpp
-  Helmets.cpp
-  Item.cpp
-  Player.cpp
-  Shield.cpp
-  Sword.cpp
-  Utilities.cpp
-  Generating Code...
+﻿  Player.cpp
   AuctionHouse.vcxproj -> D:\GitRepositories\Medieval_Auction_House\AuctionHouse\Debug\AuctionHouse.exe

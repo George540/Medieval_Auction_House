@@ -20,9 +20,17 @@
 #include "Utilities.h"
 using namespace std;
 
-Player::Player() : money(500), name("NONAME"), inventory() {};
+Player::Player() : money(500), name("NONAME"), inventory(new Inventory()) 
+{
+	Sword sword1 = Sword("Excalibur Sword", 0, 0, "normal", 2, 6);
+	inventory->addSword(sword1);
+};
 
-Player::~Player() {};
+Player::~Player()
+{
+	inventory = nullptr;
+	delete inventory;
+};
 
 Player::Player(int mon, string id) : money(mon), name(id), inventory() {};
 
@@ -48,6 +56,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(sword.getName()) != std::string::npos) {
 			Item* found = &sword;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -59,6 +68,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(axe.getName()) != std::string::npos) {
 			Item* found = &axe;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -70,6 +80,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(handgun.getName()) != std::string::npos) {
 			Item* found = &handgun;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -81,6 +92,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(bomb.getName()) != std::string::npos) {
 			Item* found = &bomb;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -92,6 +104,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(armor.getName()) != std::string::npos) {
 			Item* found = &armor;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -103,6 +116,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(helmet.getName()) != std::string::npos) {
 			Item* found = &helmet;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -114,6 +128,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(shield.getName()) != std::string::npos) {
 			Item* found = &shield;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -125,6 +140,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(costume.getName()) != std::string::npos) {
 			Item* found = &costume;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -136,6 +152,7 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 		if (search.find(accessory.getName()) != std::string::npos) {
 			Item* found = &accessory;
 			searches.push_back(*found);
+			found->print();
 			found = NULL;
 			delete found;
 		}
@@ -195,57 +212,57 @@ Item Player::buy(Inventory* storage, string itemName) {
 	return selected;
 }
 
-void Player::placeAuction(Inventory* auctionStorage, Item* item, int startBid, int buyOut) {
+void Player::placeAuction(Inventory& auctionStorage, Item* item, int startBid, int buyOut) {
 	auto itemName = item->getName();
 
 	cout << "Placing Item: " << itemName << endl;
-
-	if (ContainsInsensitiveString(itemName, "Sword") && inventory.hasSword(itemName) && static_cast<Sword*>(item) != nullptr) {
-		inventory.removeSword(itemName);
-		auctionStorage->addSword(*static_cast<Sword*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Axe") && inventory.hasAxe(itemName) && static_cast<Axe*>(item) != nullptr) {
-		inventory.removeAxe(itemName);
-		auctionStorage->addAxe(*static_cast<Axe*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Handgun") && inventory.hasHandgun(itemName) && static_cast<Handgun*>(item) != nullptr) {
-		inventory.removeHandgun(itemName);
-		auctionStorage->addHandgun(*static_cast<Handgun*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Bomb") && inventory.hasBomb(itemName) && static_cast<Bomb*>(item) != nullptr) {
-		inventory.removeBomb(itemName);
-		auctionStorage->addBomb(*static_cast<Bomb*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Armor") && inventory.hasArmor(itemName) && static_cast<Armor*>(item) != nullptr) {
-		inventory.removeArmor(itemName);
-		auctionStorage->addArmor(*static_cast<Armor*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Helmet") && inventory.hasHelmet(itemName) && static_cast<Helmet*>(item) != nullptr) {
-		inventory.removeHelmet(itemName);
-		auctionStorage->addHelmet(*static_cast<Helmet*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Shield") && inventory.hasShield(itemName) && static_cast<Shield*>(item) != nullptr) {
-		inventory.removeShield(itemName);
-		auctionStorage->addShield(*static_cast<Shield*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Costume") && inventory.hasCostume(itemName) && static_cast<Costume*>(item) != nullptr) {
-		inventory.removeCostume(itemName);
-		auctionStorage->addCostume(*static_cast<Costume*>(item));
-	}
-	else if (ContainsInsensitiveString(itemName, "Accessory") && inventory.hasAccessory(itemName) && static_cast<Accessory*>(item) != nullptr) {
-		inventory.removeAccessory(itemName);
-		auctionStorage->addAccessory(*static_cast<Accessory*>(item));
-	}
-	else {
-		cout << "Item is not recognized. Auction cancelled." << endl;
-		return;
-	}
 
 	item->setBid(startBid);
 	item->setBuy(buyOut);
 
 	cout << "Bid Price :" << item->getBid() << endl;
 	cout << "Buyout Price :" << item->getBuy() << endl;
+
+	if (ContainsInsensitiveString(itemName, "Sword")) {
+		inventory->removeSword(itemName);
+		auctionStorage.addSword(*static_cast<Sword*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Axe") && inventory->hasAxe(itemName) && static_cast<Axe*>(item) != nullptr) {
+		inventory->removeAxe(itemName);
+		auctionStorage.addAxe(*static_cast<Axe*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Handgun") && inventory->hasHandgun(itemName) && static_cast<Handgun*>(item) != nullptr) {
+		inventory->removeHandgun(itemName);
+		auctionStorage.addHandgun(*static_cast<Handgun*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Bomb") && inventory->hasBomb(itemName) && static_cast<Bomb*>(item) != nullptr) {
+		inventory->removeBomb(itemName);
+		auctionStorage.addBomb(*static_cast<Bomb*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Armor") && inventory->hasArmor(itemName) && static_cast<Armor*>(item) != nullptr) {
+		inventory->removeArmor(itemName);
+		auctionStorage.addArmor(*static_cast<Armor*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Helmet") && inventory->hasHelmet(itemName) && static_cast<Helmet*>(item) != nullptr) {
+		inventory->removeHelmet(itemName);
+		auctionStorage.addHelmet(*static_cast<Helmet*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Shield") && inventory->hasShield(itemName) && static_cast<Shield*>(item) != nullptr) {
+		inventory->removeShield(itemName);
+		auctionStorage.addShield(*static_cast<Shield*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Costume") && inventory->hasCostume(itemName) && static_cast<Costume*>(item) != nullptr) {
+		inventory->removeCostume(itemName);
+		auctionStorage.addCostume(*static_cast<Costume*>(item));
+	}
+	else if (ContainsInsensitiveString(itemName, "Accessory") && inventory->hasAccessory(itemName) && static_cast<Accessory*>(item) != nullptr) {
+		inventory->removeAccessory(itemName);
+		auctionStorage.addAccessory(*static_cast<Accessory*>(item));
+	}
+	else {
+		cout << "Item is not recognized. Auction cancelled." << endl;
+		return;
+	}
 
 	cout << itemName << " placed for auction" << endl;
 }

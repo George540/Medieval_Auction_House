@@ -19,11 +19,11 @@ using namespace std;
 
 class AuctionHouse {
 private:
-	Inventory storage;
+	Inventory* storage;
 public:
 	AuctionHouse();
 	~AuctionHouse();
-	Inventory getStorage() const { return storage; }
+	Inventory* getStorage() { return storage; }
 	void sortByPriceIncrease(string choice);
 	void sortByPriceDecrease(string choice);
 	void sortAlphabeticallyIncrease(string choice);

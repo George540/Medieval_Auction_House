@@ -15,11 +15,13 @@
 #include "Shield.h"
 #include "Sword.h"
 #include "Inventory.h"
+#include "AuctionHouse.h"
 #include <string>
 #include <vector>
 #include <iostream>
 #include <algorithm>
 #include <cmath>
+#include "Player.h"
 using namespace std;
 
 
@@ -30,28 +32,29 @@ int main()
 {
     std::cout << "Hello World!\n";
 
-	vector<int> list = { 10, 4, 7, 3, 5 };
-	for (int i = 0; i < list.size(); i++)
-		cout << list.at(i) << " ";
-	cout << endl;
+	AuctionHouse auctionHouse = AuctionHouse();
+	AuctionHouse* ahPtr = &auctionHouse;
+	auto ahInventory = ahPtr->getStorage();
+	ahPtr->getStorage()->printInventory();
 
-	removeInt(list, 7);
+	Player p1 = Player();
+	p1.getInventory()->printInventory();
 
-	for (int i = 0; i < list.size(); i++)
-		cout << list.at(i) << " ";
-
-	cout << endl;
-
-	sort(list.begin(), list.end());
-
-	auto choice = 4;
-	auto result = findInt(list, 0, list.size() - 1, choice);
-	if (result == -1) {
-		cout << choice << " NOT found. Cancelling action" << endl;
+	auto searches = p1.search(*ahInventory, "Brandish");
+	
+	for (const auto& s : searches)
+	{
+		s.print();
 	}
-	else {
-		cout << choice << " found. Index is: " << result << endl;
-	}
+
+	auto item = p1.getInventory()->getSwords().at(0);
+	p1.placeAuction(*ahInventory, &item, 0, 1200);
+
+	auctionHouse.getStorage()->printInventory();
+	p1.getInventory()->printInventory();
+
+	ahPtr = nullptr;
+	delete ahPtr;
 }
 
 int removeInt(vector<int>& list, int choice) {

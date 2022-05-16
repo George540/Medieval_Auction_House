@@ -19,7 +19,7 @@ using namespace std;
 
 class Player {
 private:
-	Inventory inventory;
+	Inventory* inventory;
 	int money;
 	string name;
 public:
@@ -30,5 +30,6 @@ public:
 	Item buy(Inventory* storage, string itemName);
 	vector<Item> search(const Inventory& storage, string search);
 	void printSearch(const vector<Item> searches);
-	void placeAuction(Inventory* auctionStorage, Item* item, int startBid, int buyOut);
+	void placeAuction(Inventory& auctionStorage, Item* item, int startBid, int buyOut);
+	Inventory* getInventory() { return inventory; }
 };
