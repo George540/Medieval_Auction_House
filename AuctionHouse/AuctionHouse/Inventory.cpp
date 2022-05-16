@@ -1,125 +1,106 @@
-#include "Item.h"
-#include "DecorateItem.h"
-#include "AttackItem.h"
-#include "DefenseItem.h"
-#include "Armor.h"
-#include "Axe.h"
-#include "Bomb.h"
-#include "Costume.h"
-#include "Accessory.h"
-#include "Handgun.h"
-#include "Helmets.h"
-#include "Shield.h"
-#include "Sword.h"
 #include "Inventory.h"
-#include <string>
-#include <vector>
-#include <iostream>
-#include <algorithm>
-using namespace std;
 
 Inventory::Inventory() {}
 
 Inventory::~Inventory() {}
 
-Sword Inventory::
-(string itemName) {
-	auto it = find(swords.begin(), swords.end(), [&itemName](const Sword& s) { return s.getName() == itemName; });
-	auto& selected = *it;
-	swords.erase(swords.begin(), it);
+Sword Inventory::removeSword(const string& itemName) {
+	auto it = find_if(swords.begin(), swords.end(), [&itemName](const Sword& s) { return s.getName() == itemName; });
+	auto selected = move(*it);
+	swords.erase(it);
 	return selected;
 }
 
-Axe Inventory::removeAxe(string itemName) {
-	auto it = find(axes.begin(), axes.end(), [&itemName](const Axe& a) { return a.getName() == itemName; });
-	auto& selected = *it;
-	axes.erase(axes.begin(), it);
+Axe Inventory::removeAxe(const string& itemName) {
+	auto it = find_if(axes.begin(), axes.end(), [&itemName](const Axe& a) { return a.getName() == itemName; });
+	auto selected = move(*it);
+	axes.erase(it);
 	return selected;
 }
 
-Handgun Inventory::removeHandgun(string itemName) {
-	auto it = find(handguns.begin(), handguns.end(), [&itemName](const Handgun& h) { return h.getName() == itemName; });
-	auto& selected = *it;
-	handguns.erase(handguns.begin(), it);
+Handgun Inventory::removeHandgun(const string& itemName) {
+	auto it = find_if(handguns.begin(), handguns.end(), [&itemName](const Handgun& h) { return h.getName() == itemName; });
+	auto selected = move(*it);
+	handguns.erase(it);
 	return selected;
 }
 
-Bomb Inventory::removeBomb(string itemName) {
-	auto it = find(bombs.begin(), bombs.end(), [&itemName](const Bomb& b) { return b.getName() == itemName; });
+Bomb Inventory::removeBomb(const string& itemName) {
+	auto it = find_if(bombs.begin(), bombs.end(), [&itemName](const Bomb& b) { return b.getName() == itemName; });
 	auto& selected = *it;
 	bombs.erase(bombs.begin(), it);
 	return selected;
 }
 
-Armor Inventory::removeArmor(string itemName) {
-	auto it = find(armors.begin(), armors.end(), [&itemName](const Armor& a) { return a.getName() == itemName; });
-	auto& selected = *it;
-	armors.erase(armors.begin(), it);
+Armor Inventory::removeArmor(const string& itemName) {
+	auto it = find_if(armors.begin(), armors.end(), [&itemName](const Armor& a) { return a.getName() == itemName; });
+	auto selected = move(*it);
+	armors.erase(it);
 	return selected;
 }
 
-Helmet Inventory::removeHelmet(string itemName) {
-	auto it = find(helmets.begin(), helmets.end(), [&itemName](const Helmet& h) { return h.getName() == itemName; });
-	auto& selected = *it;
-	helmets.erase(helmets.begin(), it);
+Helmet Inventory::removeHelmet(const string& itemName) {
+	auto it = find_if(helmets.begin(), helmets.end(), [&itemName](const Helmet& h) { return h.getName() == itemName; });
+	auto selected = move(*it);
+	helmets.erase(it);
 	return selected;
 }
 
-Shield Inventory::removeShield(string itemName) {
-	auto it = find(shields.begin(), shields.end(), [&itemName](const Shield& s) { return s.getName() == itemName; });
+Shield Inventory::removeShield(const string& itemName) {
+	auto it = find_if(shields.begin(), shields.end(), [&itemName](const Shield& s) { return s.getName() == itemName; });
 	auto& selected = *it;
-	shields.erase(shields.begin(), it);
+	shields.erase(it);
 	return selected;
 }
 
-Costume Inventory::removeCostume(string itemName) {
-	auto it = find(costumes.begin(), costumes.end(), [&itemName](const Costume& c) { return c.getName() == itemName; });
-	auto& selected = *it;
-	costumes.erase(costumes.begin(), it);
+Costume Inventory::removeCostume(const string& itemName) {
+	auto it = find_if(costumes.begin(), costumes.end(), [&itemName](const Costume& c) { return c.getName() == itemName; });
+	auto selected = move(*it);
+	costumes.erase(it);
 	return selected;
 }
 
-Accessory Inventory::removeAccessory(string itemName) {
-	auto it = find(accessories.begin(), accessories.end(), [&itemName](const Accessory& a) { return a.getName() == itemName; });
-	auto& selected = *it;
-	accessories.erase(accessories.begin(), it);
+Accessory Inventory::removeAccessory(const string& itemName) {
+	auto it = find_if(accessories.begin(), accessories.end(), [&itemName](const Accessory& a) { return a.getName() == itemName; });
+	auto selected = move(*it);
+	accessories.erase(it);
 	return selected;
 }
 
-bool Inventory::hasSword(string itemName) {
-	return find(swords.begin(), swords.end(), [&itemName](const Sword& s) { return s.getName() == itemName; }) != swords.end();
+bool Inventory::hasSword(const string& itemName) {
+	return find_if(swords.begin(), swords.end(), [&itemName](const Sword& s) { return s.getName() == itemName; }) != swords.end();
 }
 
-bool Inventory::hasAxe(string itemName) {
-	return find(axes.begin(), axes.end(), [&itemName](const Axe& a) { return a.getName() == itemName; }) != axes.end();
+bool Inventory::hasAxe(const string& itemName) {
+	return find_if(axes.begin(), axes.end(), [&itemName](const Axe& a) { return a.getName() == itemName; }) != axes.end();
 }
 
-bool Inventory::hasHandgun(string itemName) {
-	return find(handguns.begin(), handguns.end(), [&itemName](const Handgun& h) { return h.getName() == itemName; }) != handguns.end();
+bool Inventory::hasHandgun(const string& itemName) {
+	return find_if(handguns.begin(), handguns.end(), [&itemName](const Handgun& h) { return h.getName() == itemName; }) != handguns.end();
 }
 
-bool Inventory::hasBomb(string itemName) {
-	return find(bombs.begin(), bombs.end(), [&itemName](const Bomb& b) { return b.getName() == itemName; }) != bombs.end();
+bool Inventory::hasBomb(const string& itemName) {
+	return find_if(bombs.begin(), bombs.end(), [&itemName](const Bomb& b) { return b.getName() == itemName; }) != bombs.end();
 }
 
-bool Inventory::hasArmor(string itemName) {
-	return find(armors.begin(), armors.end(), [&itemName](const Armor& a) { return a.getName() == itemName; }) != armors.end();
+bool Inventory::hasArmor(const string& itemName) {
+	return find_if(armors.begin(), armors.end(), [&itemName](const Armor& a) { return a.getName() == itemName; }) != armors.end();
 }
 
-bool Inventory::hasHelmet(string itemName) {
-	return find(helmets.begin(), helmets.end(), [&itemName](const Helmet& h) { return h.getName() == itemName; }) != helmets.end();
+bool Inventory::hasHelmet(const string& itemName) {
+	return find_if(helmets.begin(), helmets.end(), [&itemName](const Helmet& h) { return h.getName() == itemName; }) != helmets.end();
 }
 
-bool Inventory::hasShield(string itemName) {
-	return find(shields.begin(), shields.end(), [&itemName](const Shield& s) { return s.getName() == itemName; }) != shields.end();
+bool Inventory::hasShield(const string& itemName) {
+	return find_if(shields.begin(), shields.end(), [&itemName](const Shield& s) { return s.getName() == itemName; }) != shields.end();
 }
 
-bool Inventory::hasCostume(string itemName) {
-	return find(costumes.begin(), costumes.end(), [&itemName](const Costume& c) { return c.getName() == itemName; }) != costumes.end();
+bool Inventory::hasCostume(const string& itemName) {
+	return find_if(costumes.begin(), costumes.end(), [&itemName](const Costume& c) { return c.getName() == itemName; }) != costumes.end();
 }
 
-bool Inventory::hasAccessory(string itemName) {
-	return find(accessories.begin(), accessories.end(), [&itemName](const Accessory& a) { return a.getName() == itemName; }) != accessories.end();
+bool Inventory::hasAccessory(const string& itemName) {
+	return find_if(accessories.begin(), accessories.end(), [&itemName](const Accessory& a) { return a.getName() == itemName; }) != accessories.end();
 }
 
 void Inventory::printInventory() {

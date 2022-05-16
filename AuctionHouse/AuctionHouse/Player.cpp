@@ -13,11 +13,11 @@
 #include "Shield.h"
 #include "Sword.h"
 #include "AuctionHouse.h"
-#include "Utilities.h"
 #include <string>
 #include <vector>
 #include <iostream>
 #include <typeinfo>
+#include "Utilities.h"
 using namespace std;
 
 Player::Player() : money(500), name("NONAME"), inventory() {};
@@ -44,73 +44,100 @@ vector<Item> Player::search(const Inventory& storage, string search) {
 
 	cout << "Swords with the following characters: " << endl;
 	auto swords = storage.getSwords();
-	for (const auto& sword : swords) {
+	for (auto& sword : swords) {
 		if (search.find(sword.getName()) != std::string::npos) {
-			searches.push_back(sword);
+			Item* found = &sword;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Axes with the following characters: " << endl;
 	auto axes = storage.getAxes();
-	for (const auto& axe : axes) {
+	for (auto& axe : axes) {
 		if (search.find(axe.getName()) != std::string::npos) {
-			searches.push_back(axe);
+			Item* found = &axe;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Handguns with the following characters: " << endl;
 	auto handguns = storage.getHandguns();
-	for (const auto& handgun : handguns) {
+	for (auto& handgun : handguns) {
 		if (search.find(handgun.getName()) != std::string::npos) {
-			searches.push_back(handgun);
+			Item* found = &handgun;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Bombs with the following characters: " << endl;
 	auto bombs = storage.getBombs();
-	for (const auto& bomb : bombs) {
+	for (auto& bomb : bombs) {
 		if (search.find(bomb.getName()) != std::string::npos) {
-			searches.push_back(bomb);
+			Item* found = &bomb;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Armor with the following characters: " << endl;
 	auto armors = storage.getArmors();
-	for (const auto& armor : armors) {
+	for (auto& armor : armors) {
 		if (search.find(armor.getName()) != std::string::npos) {
-			searches.push_back(armor);
+			Item* found = &armor;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Helmets with the following characters: " << endl;
 	auto helmets = storage.getHelmets();
-	for (const auto& helmet : helmets) {
+	for (auto& helmet : helmets) {
 		if (search.find(helmet.getName()) != std::string::npos) {
-			searches.push_back(helmet);
+			Item* found = &helmet;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Shields with the following characters: " << endl;
 	auto shields = storage.getShields();
-	for (const auto& shield : shields) {
+	for (auto& shield : shields) {
 		if (search.find(shield.getName()) != std::string::npos) {
-			searches.push_back(shield);
+			Item* found = &shield;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Costumes with the following characters: " << endl;
 	auto costumes = storage.getCostumes();
-	for (const auto& costume : costumes) {
+	for (auto& costume : costumes) {
 		if (search.find(costume.getName()) != std::string::npos) {
-			searches.push_back(costume);
+			Item* found = &costume;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 
 	cout << "Accessories with the following characters: " << endl;
 	auto accessories = storage.getAccessories();
-	for (const auto& accessory : accessories) {
+	for (auto& accessory : accessories) {
 		if (search.find(accessory.getName()) != std::string::npos) {
-			searches.push_back(accessory);
+			Item* found = &accessory;
+			searches.push_back(*found);
+			found = NULL;
+			delete found;
 		}
 	}
 

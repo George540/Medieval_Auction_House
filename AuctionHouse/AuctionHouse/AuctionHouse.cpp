@@ -17,7 +17,7 @@
 using namespace std;
 
 
-AuctionHouse::AuctionHouse() : storage() {
+AuctionHouse::AuctionHouse() {
 	//Sword sword1 = Sword("Brandish", 1000, 0, "normal", 2, 6);
 	//Sword sword2 = Sword("Avenger", 32000, 5000, "elemental", 6, 3);
 	//Sword sword3 = Sword("Ice Calibur", 15000, 3500, "ice", 4, 5);

@@ -14,6 +14,9 @@
 #include "Sword.h"
 #include <string>
 #include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
 
 class Inventory {
 private:
@@ -49,25 +52,25 @@ public:
 	void addCostume(Costume costume) { costumes.push_back(costume); }
 	void addAccessory(Accessory accessory) { accessories.push_back(accessory); }
 
-	Sword removeSword(string itemName);
-	Axe removeAxe(string itemName);
-	Handgun removeHandgun(string itemName);
-	Bomb removeBomb(string itemName);
-	Armor removeArmor(string itemName);
-	Helmet removeHelmet(string itemName);
-	Shield removeShield(string itemName);
-	Costume removeCostume(string itemName);
-	Accessory removeAccessory(string itemName);
+	Sword removeSword(const string& itemName);
+	Axe removeAxe(const string& itemName);
+	Handgun removeHandgun(const string& itemName);
+	Bomb removeBomb(const string& itemName);
+	Armor removeArmor(const string& itemName);
+	Helmet removeHelmet(const string& itemName);
+	Shield removeShield(const string& itemName);
+	Costume removeCostume(const string& itemName);
+	Accessory removeAccessory(const string& itemName);
 
-	bool hasSword(string itemName);
-	bool hasAxe(string itemName);
-	bool hasHandgun(string itemName);
-	bool hasBomb(string itemName);
-	bool hasArmor(string itemName);
-	bool hasHelmet(string itemName);
-	bool hasShield(string itemName);
-	bool hasCostume(string itemName);
-	bool hasAccessory(string itemName);
+	bool hasSword(const string& itemName);
+	bool hasAxe(const string& itemName);
+	bool hasHandgun(const string& itemName);
+	bool hasBomb(const string& itemName);
+	bool hasArmor(const string& itemName);
+	bool hasHelmet(const string& itemName);
+	bool hasShield(const string& itemName);
+	bool hasCostume(const string& itemName);
+	bool hasAccessory(const string& itemName);
 
 	void printInventory();
 };
