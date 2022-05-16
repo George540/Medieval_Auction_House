@@ -7,7 +7,7 @@ bool EqualsIgnoreCase(const std::string& str1, const std::string& str2)
     return str1.size() == str2.size() && std::equal(str1.begin(), str1.end(), str2.begin(), [](auto a, auto b) {return std::tolower(a) == std::tolower(b); });
 }
 
-bool ContainsInsensitiveString(std::string str1, std::string str2)
+bool ContainsSubstrictIgnoreCase(std::string str1, std::string str2)
 {
     // turn str1 to lower case
     std::transform(str1.begin(), str1.end(), str1.begin(), ::tolower);

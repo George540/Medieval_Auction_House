@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 
-Item::Item() : buyprice(0), bidprice(0) {};
+Item::Item() : label("NONAME"), buyprice(0), bidprice(0), form("NOFORM") {};
 
 Item::~Item() {};
 

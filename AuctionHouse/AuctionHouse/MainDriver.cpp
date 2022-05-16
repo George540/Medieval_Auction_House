@@ -16,6 +16,7 @@
 #include "Sword.h"
 #include "Inventory.h"
 #include "AuctionHouse.h"
+#include "Utilities.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -31,6 +32,8 @@ int findInt(vector<int> list, int l, int r, int choice);
 int main()
 {
     std::cout << "Hello World!\n";
+
+	string str1 = "Excalibur Sword";
 
 	AuctionHouse auctionHouse = AuctionHouse();
 	AuctionHouse* ahPtr = &auctionHouse;
@@ -52,6 +55,12 @@ int main()
 
 	auctionHouse.getStorage()->printInventory();
 	p1.getInventory()->printInventory();
+
+	p1.buy(*ahInventory, "Excalibur Sword");
+
+	auctionHouse.getStorage()->printInventory();
+	p1.getInventory()->printInventory();
+
 
 	ahPtr = nullptr;
 	delete ahPtr;

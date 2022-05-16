@@ -20,9 +20,9 @@
 #include "Utilities.h"
 using namespace std;
 
-Player::Player() : money(500), name("NONAME"), inventory(new Inventory()) 
+Player::Player() : money(1500), name("NONAME"), inventory(new Inventory()) 
 {
-	Sword sword1 = Sword("Excalibur Sword", 0, 0, "normal", 2, 6);
+	Sword sword1 = Sword("Excalibur Sword", 0, 0, "normal", 3, 7);
 	inventory->addSword(sword1);
 };
 
@@ -172,44 +172,101 @@ void Player::printSearch(const vector<Item> searches) {
 // This is done by first finding what type of item is it
 // Then it iterates through the collection of that specific item only
 // without having to iterate through all other irrelevant items
-Item Player::buy(Inventory* storage, string itemName) {
-	Item selected;
+void Player::buy(Inventory& storage, string itemName) {
+	cout << "Buying item with name: " << itemName << endl;
 
-	if (ContainsInsensitiveString(itemName, "Sword")) {
-		selected = storage->removeSword(itemName);
+	Item* selected;
+
+	if (ContainsSubstrictIgnoreCase(itemName, "Sword")) {
+		auto item = storage.removeSword(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Axe")) {
-		selected = storage->removeAxe(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Axe")) {
+		auto item = storage.removeAxe(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Handgun")) {
-		selected = storage->removeHandgun(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Handgun")) {
+		auto item = storage.removeHandgun(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Bomb")) {
-		selected = storage->removeBomb(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Bomb")) {
+		auto item = storage.removeBomb(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Armor")) {
-		selected = storage->removeArmor(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Armor")) {
+		auto item = storage.removeArmor(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Helmet")) {
-		selected = storage->removeHelmet(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Helmet")) {
+		auto item = storage.removeHelmet(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Shield")) {
-		selected = storage->removeShield(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Shield")) {
+		auto item = storage.removeShield(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Costume")) {
-		selected = storage->removeCostume(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Costume")) {
+		auto item = storage.removeCostume(itemName);
+		selected = &item;
 	}
-	else if (ContainsInsensitiveString(itemName, "Accessory")) {
-		selected = storage->removeAccessory(itemName);
+	else if (ContainsSubstrictIgnoreCase(itemName, "Accessory")) {
+		auto item = storage.removeAccessory(itemName);
+		selected = &item;
 	}
 	else {
-		selected = Item();
+		selected = nullptr;
 	}
 
-	selected.setBid(0);
-	selected.setBuy(0);
+	if (selected == nullptr) {
+		cout << "Item not found. Cancelling buyout." << endl;
+		return;
+	}
 
-	return selected;
+	if (selected != nullptr && selected->getBuy() > money) {
+		cout << "Not enough money to buy item. Cancelling buyout." << endl;
+		return;
+	}
+	money -= selected->getBuy();
+	//selected->setBid(0);
+	//selected->setBuy(0);
+	if (ContainsSubstrictIgnoreCase(itemName, "Sword")) {
+		Sword* sword = dynamic_cast<Sword*>(selected);
+		if (sword == nullptr) {
+			cout << "NULL" << endl;
+		}
+		//inventory->addSword(sword);
+		cout << "PLACED!" << endl;
+	}	
+	else if (ContainsSubstrictIgnoreCase(itemName, "Axe")) {
+		inventory->addAxe(*static_cast<Axe*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Handgun")) {
+		inventory->addHandgun(*static_cast<Handgun*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Bomb")) {
+		inventory->addBomb(*static_cast<Bomb*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Armor")) {
+		inventory->addArmor(*static_cast<Armor*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Helmet")) {
+		inventory->addHelmet(*static_cast<Helmet*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Shield")) {
+		inventory->addShield(*static_cast<Shield*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Costume")) {
+		inventory->addCostume(*static_cast<Costume*>(selected));
+	}
+	else if (ContainsSubstrictIgnoreCase(itemName, "Accessory")) {
+		inventory->addAccessory(*static_cast<Accessory*>(selected));
+	}
+	else {
+		cout << "Item was not added to inventory. ITEM DROPPED." << endl;
+	}
+
+	selected = nullptr;
+	delete selected;
 }
 
 void Player::placeAuction(Inventory& auctionStorage, Item* item, int startBid, int buyOut) {
@@ -223,39 +280,39 @@ void Player::placeAuction(Inventory& auctionStorage, Item* item, int startBid, i
 	cout << "Bid Price :" << item->getBid() << endl;
 	cout << "Buyout Price :" << item->getBuy() << endl;
 
-	if (ContainsInsensitiveString(itemName, "Sword")) {
+	if (ContainsSubstrictIgnoreCase(itemName, "Sword")) {
 		inventory->removeSword(itemName);
 		auctionStorage.addSword(*static_cast<Sword*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Axe") && inventory->hasAxe(itemName) && static_cast<Axe*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Axe") && inventory->hasAxe(itemName) && static_cast<Axe*>(item) != nullptr) {
 		inventory->removeAxe(itemName);
 		auctionStorage.addAxe(*static_cast<Axe*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Handgun") && inventory->hasHandgun(itemName) && static_cast<Handgun*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Handgun") && inventory->hasHandgun(itemName) && static_cast<Handgun*>(item) != nullptr) {
 		inventory->removeHandgun(itemName);
 		auctionStorage.addHandgun(*static_cast<Handgun*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Bomb") && inventory->hasBomb(itemName) && static_cast<Bomb*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Bomb") && inventory->hasBomb(itemName) && static_cast<Bomb*>(item) != nullptr) {
 		inventory->removeBomb(itemName);
 		auctionStorage.addBomb(*static_cast<Bomb*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Armor") && inventory->hasArmor(itemName) && static_cast<Armor*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Armor") && inventory->hasArmor(itemName) && static_cast<Armor*>(item) != nullptr) {
 		inventory->removeArmor(itemName);
 		auctionStorage.addArmor(*static_cast<Armor*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Helmet") && inventory->hasHelmet(itemName) && static_cast<Helmet*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Helmet") && inventory->hasHelmet(itemName) && static_cast<Helmet*>(item) != nullptr) {
 		inventory->removeHelmet(itemName);
 		auctionStorage.addHelmet(*static_cast<Helmet*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Shield") && inventory->hasShield(itemName) && static_cast<Shield*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Shield") && inventory->hasShield(itemName) && static_cast<Shield*>(item) != nullptr) {
 		inventory->removeShield(itemName);
 		auctionStorage.addShield(*static_cast<Shield*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Costume") && inventory->hasCostume(itemName) && static_cast<Costume*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Costume") && inventory->hasCostume(itemName) && static_cast<Costume*>(item) != nullptr) {
 		inventory->removeCostume(itemName);
 		auctionStorage.addCostume(*static_cast<Costume*>(item));
 	}
-	else if (ContainsInsensitiveString(itemName, "Accessory") && inventory->hasAccessory(itemName) && static_cast<Accessory*>(item) != nullptr) {
+	else if (ContainsSubstrictIgnoreCase(itemName, "Accessory") && inventory->hasAccessory(itemName) && static_cast<Accessory*>(item) != nullptr) {
 		inventory->removeAccessory(itemName);
 		auctionStorage.addAccessory(*static_cast<Accessory*>(item));
 	}

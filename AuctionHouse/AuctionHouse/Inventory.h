@@ -42,15 +42,15 @@ public:
 	vector<Costume> getCostumes() const { return costumes; }
 	vector<Accessory> getAccessories() const { return accessories; }
 
-	void addSword(Sword sword) { swords.push_back(sword); }
-	void addAxe(Axe axe) { axes.push_back(axe); }
-	void addHandgun(Handgun handgun) { handguns.push_back(handgun); }
-	void addBomb(Bomb bomb) { bombs.push_back(bomb); }
-	void addArmor(Armor armor) { armors.push_back(armor); }
-	void addHelmet(Helmet helmet) { helmets.push_back(helmet); }
-	void addShield(Shield shield) { shields.push_back(shield); }
-	void addCostume(Costume costume) { costumes.push_back(costume); }
-	void addAccessory(Accessory accessory) { accessories.push_back(accessory); }
+	void addSword(Sword& sword) { swords.push_back(sword); }
+	void addAxe(Axe& axe) { axes.push_back(axe); }
+	void addHandgun(Handgun& handgun) { handguns.push_back(handgun); }
+	void addBomb(Bomb& bomb) { bombs.push_back(bomb); }
+	void addArmor(Armor& armor) { armors.push_back(armor); }
+	void addHelmet(Helmet& helmet) { helmets.push_back(helmet); }
+	void addShield(Shield& shield) { shields.push_back(shield); }
+	void addCostume(Costume& costume) { costumes.push_back(costume); }
+	void addAccessory(Accessory& accessory) { accessories.push_back(accessory); }
 
 	Sword removeSword(const string& itemName);
 	Axe removeAxe(const string& itemName);
