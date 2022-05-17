@@ -73,5 +73,10 @@ public:
 	bool hasCostume(const string& itemName);
 	bool hasAccessory(const string& itemName);
 
+	void sortByPriceIncrease();
+	void sortByPriceDecrease();
+	void sortAlphabeticallyIncrease();
+	void sortAlphabeticallyDecrease();
+
 	void printInventory();
 };

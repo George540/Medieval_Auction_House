@@ -103,6 +103,54 @@ bool Inventory::hasAccessory(const string& itemName) {
 	return find_if(accessories.begin(), accessories.end(), [&itemName](const Accessory& a) { return a.getName() == itemName; }) != accessories.end();
 }
 
+void Inventory::sortByPriceIncrease() {
+	sort(swords.begin(), swords.end(), CompareItemsPriceIncreasing);
+	sort(axes.begin(), axes.end(), CompareItemsPriceIncreasing);
+	sort(handguns.begin(), handguns.end(), CompareItemsPriceIncreasing);
+	sort(bombs.begin(), bombs.end(), CompareItemsPriceIncreasing);
+	sort(armors.begin(), armors.end(), CompareItemsPriceIncreasing);
+	sort(helmets.begin(), helmets.end(), CompareItemsPriceIncreasing);
+	sort(shields.begin(), shields.end(), CompareItemsPriceIncreasing);
+	sort(costumes.begin(), costumes.end(), CompareItemsPriceIncreasing);
+	sort(accessories.begin(), accessories.end(), CompareItemsPriceIncreasing);
+}
+
+void Inventory::sortByPriceDecrease() {
+	sort(swords.begin(), swords.end(), CompareItemsPriceDecreasing);
+	sort(axes.begin(), axes.end(), CompareItemsPriceDecreasing);
+	sort(handguns.begin(), handguns.end(), CompareItemsPriceDecreasing);
+	sort(bombs.begin(), bombs.end(), CompareItemsPriceDecreasing);
+	sort(armors.begin(), armors.end(), CompareItemsPriceDecreasing);
+	sort(helmets.begin(), helmets.end(), CompareItemsPriceDecreasing);
+	sort(shields.begin(), shields.end(), CompareItemsPriceDecreasing);
+	sort(costumes.begin(), costumes.end(), CompareItemsPriceDecreasing);
+	sort(accessories.begin(), accessories.end(), CompareItemsPriceDecreasing);
+}
+
+void Inventory::sortAlphabeticallyIncrease() {
+	sort(swords.begin(), swords.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(axes.begin(), axes.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(handguns.begin(), handguns.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(bombs.begin(), bombs.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(armors.begin(), armors.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(helmets.begin(), helmets.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(shields.begin(), shields.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(costumes.begin(), costumes.end(), CompareItemsAlphabeticallyIncreasing);
+	sort(accessories.begin(), accessories.end(), CompareItemsAlphabeticallyIncreasing);
+}
+
+void Inventory::sortAlphabeticallyDecrease() {
+	sort(swords.begin(), swords.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(axes.begin(), axes.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(handguns.begin(), handguns.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(bombs.begin(), bombs.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(armors.begin(), armors.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(helmets.begin(), helmets.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(shields.begin(), shields.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(costumes.begin(), costumes.end(), CompareItemsAlphabeticallyDecreasing);
+	sort(accessories.begin(), accessories.end(), CompareItemsAlphabeticallyDecreasing);
+}
+
 void Inventory::printInventory() {
 	cout << "INVENTORY" << endl;
 

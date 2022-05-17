@@ -1,11 +1,7 @@
 #include "Player.h"
 using namespace std;
 
-Player::Player() : money(1500), name("NONAME"), inventory(new Inventory()) 
-{
-	Sword sword1 = Sword("Excalibur Sword", 0, 0, "normal", 3, 7);
-	inventory->addSword(sword1);
-};
+Player::Player() : money(1500), name("NONAME"), inventory(new Inventory()) {};
 
 Player::~Player()
 {

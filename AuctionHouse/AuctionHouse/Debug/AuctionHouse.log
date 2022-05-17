@@ -1,2 +1,4 @@
-﻿  Player.cpp
+﻿  MainDriver.cpp
+  Utilities.cpp
+  Generating Code...
   AuctionHouse.vcxproj -> D:\GitRepositories\Medieval_Auction_House\AuctionHouse\Debug\AuctionHouse.exe

@@ -40,7 +40,11 @@ int main()
 	auto ahInventory = ahPtr->getStorage();
 	ahPtr->getStorage()->printInventory();
 
-	Player p1 = Player();
+	ahPtr->getStorage()->sortByPriceDecrease();
+
+	ahPtr->getStorage()->printInventory();
+
+	/*Player p1 = Player();
 	p1.getInventory()->printInventory();
 
 	auto searches = p1.search(*ahInventory, "Brandish");
@@ -55,7 +59,7 @@ int main()
 	p1.buy(*ahInventory, "Excalibur Sword");
 
 	auctionHouse.getStorage()->printInventory();
-	p1.getInventory()->printInventory();
+	p1.getInventory()->printInventory();*/
 
 
 	ahPtr = nullptr;
