@@ -9,4 +9,8 @@ AttackItem::~AttackItem() {};
 
 AttackItem::AttackItem(string name, int buy, int bid, string tp, int dmg, int spd) : Item(name, buy, bid, tp), damage(dmg), speed(spd) {};
 
-void AttackItem::setDamage(int dmg) { damage = dmg; }
+AttackItem::AttackItem(const AttackItem& otherAttackItem) :
+	Item(otherAttackItem),
+	damage(otherAttackItem.damage),
+	speed(otherAttackItem.speed)
+{};

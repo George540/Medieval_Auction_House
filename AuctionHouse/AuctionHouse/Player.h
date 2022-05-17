@@ -1,4 +1,5 @@
 #pragma once
+#include "Player.h"
 #include "Item.h"
 #include "DecorateItem.h"
 #include "AttackItem.h"
@@ -12,10 +13,9 @@
 #include "Helmets.h"
 #include "Shield.h"
 #include "Sword.h"
+#include "AuctionHouse.h"
 #include "Inventory.h"
-#include <string>
 #include <vector>
-using namespace std;
 
 class Player {
 private:

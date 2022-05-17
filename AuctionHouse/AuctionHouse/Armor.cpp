@@ -9,6 +9,10 @@ Armor::~Armor() {};
 
 Armor::Armor(string name, int buy, int bid, string tp, int def) : DefenseItem(name, buy, bid, tp, def) {};
 
+Armor::Armor(const Armor& otherItem) :
+	DefenseItem(otherItem)
+{};
+
 void Armor::print() const {
 	cout << "Armor: " << getName() << ", Defense: " << getDefense() << ", Type: " << getType() << endl;
 	cout << "Buying Price: " << getBuy() << ", Bidding Price: " << getBid() << endl;

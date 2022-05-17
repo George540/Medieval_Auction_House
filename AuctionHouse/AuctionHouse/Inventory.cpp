@@ -68,7 +68,7 @@ Accessory Inventory::removeAccessory(const string& itemName) {
 }
 
 bool Inventory::hasSword(const string& itemName) {
-	return find_if(swords.begin(), swords.end(), [&itemName](const Sword& s) { return s.getName() == itemName; }) != swords.end();
+	return find_if(swords.begin(), swords.end(), [&itemName](const Sword& s) { return EqualsIgnoreCase(s.getName(), itemName); }) != swords.end();
 }
 
 bool Inventory::hasAxe(const string& itemName) {
@@ -104,7 +104,7 @@ bool Inventory::hasAccessory(const string& itemName) {
 }
 
 void Inventory::printInventory() {
-	cout << "AUCTION HOUSE INVENTORY" << endl;
+	cout << "INVENTORY" << endl;
 
 	cout << swords.size() << " swords are up for auctions" << endl;
 	for (const auto& sword : swords) {

@@ -7,5 +7,6 @@ public:
 	Handgun();
 	~Handgun();
 	Handgun(std::string name, int buy, int bid, std::string tp, int dmg, int spd);
+	Handgun(const Handgun& otherHandgun);
 	void print() const;
 };

@@ -7,5 +7,6 @@ public:
 	Sword();
 	~Sword();
 	Sword(std::string name, int buy, int bid, std::string tp, int dmg, int spd);
+	Sword(const Sword& otherSword);
 	void print() const;
 };

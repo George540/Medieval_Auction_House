@@ -9,6 +9,10 @@ Helmet::~Helmet() {};
 
 Helmet::Helmet(string name, int buy, int bid, string tp, int def) : DefenseItem(name, buy, bid, tp, def) {};
 
+Helmet::Helmet(const Helmet& otherHelmet) :
+	DefenseItem(otherHelmet)
+{};
+
 void Helmet::print() const {
 	cout << "Helmet: " << getName() << ", Defense: " << getDefense() << ", Type: " << getType() << endl;
 	cout << "Buying Price: " << getBuy() << ", Bidding Price: " << getBid() << endl;

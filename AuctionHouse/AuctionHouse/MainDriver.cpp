@@ -44,11 +44,7 @@ int main()
 	p1.getInventory()->printInventory();
 
 	auto searches = p1.search(*ahInventory, "Brandish");
-	
-	for (const auto& s : searches)
-	{
-		s.print();
-	}
+	p1.printSearch(searches);
 
 	auto item = p1.getInventory()->getSwords().at(0);
 	p1.placeAuction(*ahInventory, &item, 0, 1200);

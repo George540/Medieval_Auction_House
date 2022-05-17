@@ -9,6 +9,10 @@ Costume::~Costume() {};
 
 Costume::Costume(string name, int buy, int bid, string tp, string col) : DecorateItem(name, buy, bid, tp, col) {};
 
+Costume::Costume(const Costume& otherCostume) :
+	DecorateItem(otherCostume)
+{};
+
 void Costume::print() const {
 	cout << "Costume Outfit: " << getName() << ", Color: " << getColor() << ", Type: " << getType() << endl;
 	cout << "Buying Price: " << getBuy() << ", Bidding Price: " << getBid() << endl;

@@ -12,6 +12,7 @@
 #include "Helmets.h"
 #include "Shield.h"
 #include "Sword.h"
+#include "Utilities.h"
 #include <string>
 #include <vector>
 #include <iostream>
