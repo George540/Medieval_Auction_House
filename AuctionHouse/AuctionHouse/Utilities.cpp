@@ -1,6 +1,10 @@
 #include <algorithm>
 #include <string>
 #include "Utilities.h"
+#include <fstream>
+#include <iostream>
+#include <filesystem>
+namespace fs = std::filesystem;
 
 bool EqualsIgnoreCase(const std::string str1, const std::string str2)
 {
@@ -49,4 +53,55 @@ bool CompareItemsAlphabeticallyDecreasing(const Item i1, const Item i2)
         return CompareItemsPriceDecreasing(i1, i2);
     }
     return i1.getName() > i2.getName();
+}
+
+void DeleteLineFromSelectedFile(std::string path, std::string filename, std::string deleteLine)
+{
+    fs::path current_path = path;
+    std::cout << fs::absolute(current_path) << std::endl;
+    auto current_path_string = fs::absolute(current_path).string();
+    std::cout << current_path_string << std::endl;
+    std::string fileNamePath = path + filename;
+    std::string tempNamePath = path + "temp.txt";
+
+    std::ifstream fin;
+    fin.open(fileNamePath);
+    std::ofstream temp;
+    temp.open(tempNamePath);
+
+    std::string line;
+
+    while (getline(fin, line)) {
+        auto position = line.find(deleteLine);
+
+        if (position != std::string::npos) {
+            line.replace(line.find(deleteLine), deleteLine.length(), " ");
+        }
+
+        if (!line.empty() && line != deleteLine && line != " ") {
+            temp << line << std::endl;
+        }
+    }
+
+    temp.close();
+    fin.close();
+
+    auto c = current_path_string + filename;
+    std::cout << c << std::endl;
+    auto success = remove(c.c_str());
+    if (success == 0) {
+        std::cout << "SUCCESS1" << std::endl;
+    }
+    else {
+        perror("ERROR MAN");
+        std::cout << "FAILURE1" << std::endl;
+    }
+    fs::path t = "temp.txt";
+    success = std::rename(tempNamePath.c_str(), fileNamePath.c_str());
+    if (success == 0) {
+        std::cout << "SUCCESS2" << std::endl;
+    }
+    else {
+        std::cout << "FAILURE2" << std::endl;
+    }
 }

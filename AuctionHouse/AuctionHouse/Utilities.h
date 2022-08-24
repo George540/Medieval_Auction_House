@@ -11,3 +11,5 @@ bool CompareItemsPriceIncreasing(const Item i1, const Item i2);
 bool CompareItemsPriceDecreasing(const Item i1, const Item i2);
 bool CompareItemsAlphabeticallyIncreasing(const Item i1, const Item i2);
 bool CompareItemsAlphabeticallyDecreasing(const Item i1, const Item i2);
+
+void DeleteLineFromSelectedFile(std::string path, std::string filename, std::string deleteLine);

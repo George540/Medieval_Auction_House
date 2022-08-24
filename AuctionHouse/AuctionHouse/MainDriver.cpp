@@ -23,26 +23,59 @@
 #include <algorithm>
 #include <cmath>
 #include "Player.h"
+#include <iostream>
+#include <fstream>  
 using namespace std;
 
 
 int removeInt(vector<int>& list, int choice);
 int findInt(vector<int> list, int l, int r, int choice);
 
-int main()
+void Foo(int x) { cout << "1"; }
+void Foo(int* x) { cout << "2"; }
+void Foo(int** x) { cout << "3"; }
+
+void Bar(int& x) {
+	Foo(&x);
+	int* y = (int*)&x;
+	Foo(y);
+	Foo(*y);
+	Foo(&y);
+}
+
+class A {};
+
+
+int main(int, char**)
 {
     std::cout << "Hello World!\n";
 
 	string str1 = "Excalibur Sword";
 
-	AuctionHouse auctionHouse = AuctionHouse();
+	/*AuctionHouse auctionHouse = AuctionHouse();
 	AuctionHouse* ahPtr = &auctionHouse;
 	auto ahInventory = ahPtr->getStorage();
 	ahPtr->getStorage()->printInventory();
 
 	ahPtr->getStorage()->sortByPriceDecrease();
 
-	ahPtr->getStorage()->printInventory();
+	ahPtr->getStorage()->printInventory();*/
+
+	ifstream myfile;
+	string path = "..\\..\\AuctionHouse\\ServerStorage\\";
+	string file = "Test.txt";
+	myfile.open(path+file);
+	if (!myfile) std::cerr << "Could not open the file!" << std::endl;
+
+	string sent;
+	while (getline(myfile, sent)) {
+		cout << sent << endl;
+	}
+
+	string deleteLine = "333";
+
+	DeleteLineFromSelectedFile(path, file, deleteLine);
+	
 
 	/*Player p1 = Player();
 	p1.getInventory()->printInventory();
@@ -62,10 +95,20 @@ int main()
 	p1.getInventory()->printInventory();*/
 
 
-	ahPtr = nullptr;
-	delete ahPtr;
-}
+	//ahPtr = nullptr;
+	//delete ahPtr;
 
+	/*int a = 0;
+	Bar(a);*/
+
+	/*vector<int> v;
+	v.resize(1000);
+	for (int i = 0; i < 1000; i++) {
+		v[i] = i;
+	}*/
+
+	auto a = new A();
+}
 int removeInt(vector<int>& list, int choice) {
 	auto it = find(list.begin(), list.end(), choice);
 
